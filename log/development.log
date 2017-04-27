@@ -32147,3 +32147,533 @@ Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-04-27 12:46:15 -04
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-04-27 12:46:15 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-27 12:47:43 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 151ms (Views: 136.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-04-27 12:47:44 -0400
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-04-27 12:47:44 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-04-27 12:47:44 -0400
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-04-27 12:47:44 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-04-27 12:47:44 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-04-27 12:47:44 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-04-27 12:47:44 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:44 -0400
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-04-27 12:47:44 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:44 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:44 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:44 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:44 -0400
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:44 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:44 -0400
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:44 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:44 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:44 -0400
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-04-27 12:47:45 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (19.8ms)
+  Rendered users/new.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 106ms (Views: 96.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-04-27 12:47:50 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hfpmwfXsuzSMbRqeOQ4nVAzgvMs9+fXaYLxkyv7GZqI=", "user"=>{"name"=>"Jeremy Han", "year"=>"Freshman", "email"=>"asdf", "password"=>"[FILTERED]", "category"=>"Tutor", "bio"=>"safd"}, "commit"=>"Create User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `password_hash`
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("bio", "category", "created_at", "email", "name", "password_hash", "updated_at", "year") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["bio", "safd"], ["category", "Tutor"], ["created_at", "2017-04-27 16:47:50.353365"], ["email", "asdf"], ["name", "Jeremy Han"], ["password_hash", "$2a$10$e6gLyK0tz/UuV3gy2HQls.rKCMiw0TcGVMMQiiSQIQLPzhSlDLbQ2"], ["updated_at", "2017-04-27 16:47:50.353365"], ["year", "Freshman"]]
+  [1m[36m (10.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/subjects
+Completed 302 Found in 178ms (ActiveRecord: 10.9ms)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2017-04-27 12:47:50 -0400
+Processing by SubjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mSubject Load (10.2ms)[0m  SELECT "subjects".* FROM "subjects"
+  Rendered subjects/index.html.erb within layouts/application (50.9ms)
+Completed 200 OK in 147ms (Views: 125.0ms | ActiveRecord: 10.3ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-04-27 12:47:50 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-04-27 12:47:50 -0400
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-04-27 12:47:50 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-04-27 12:47:50 -0400
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-04-27 12:47:50 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-04-27 12:47:50 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-04-27 12:47:50 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-04-27 12:47:50 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:50 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:50 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:50 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:50 -0400
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:50 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:50 -0400
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:50 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:50 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:50 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:50 -0400
+
+
+Started GET "/subjects/3" for 127.0.0.1 at 2017-04-27 12:47:52 -0400
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mSubject Load (1.5ms)[0m  [1mSELECT  "subjects".* FROM "subjects"  WHERE "subjects"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."subject_id" = ?[0m  [["subject_id", 3]]
+  Rendered subjects/show.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 98ms (Views: 85.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/subjects/3/posts/new" for 127.0.0.1 at 2017-04-27 12:47:53 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"subject_id"=>"3"}
+  [1m[35mSubject Load (0.2ms)[0m  SELECT  "subjects".* FROM "subjects"  WHERE "subjects"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered posts/_form.html.erb (13.2ms)
+  Rendered posts/new.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 90ms (Views: 82.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/subjects/3/posts" for 127.0.0.1 at 2017-04-27 12:47:55 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hfpmwfXsuzSMbRqeOQ4nVAzgvMs9+fXaYLxkyv7GZqI=", "post"=>{"title"=>"sdfsadf", "body"=>"sdfdsf"}, "commit"=>"Create Post", "subject_id"=>"3"}
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT  "subjects".* FROM "subjects"  WHERE "subjects"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (6.7ms)[0m  INSERT INTO "posts" ("body", "created_at", "subject_id", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["body", "sdfdsf"], ["created_at", "2017-04-27 16:47:55.765282"], ["subject_id", 3], ["title", "sdfsadf"], ["updated_at", "2017-04-27 16:47:55.765282"], ["user_id", 2]]
+  [1m[36m (5.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/subjects/3
+Completed 302 Found in 33ms (ActiveRecord: 12.9ms)
+
+
+Started GET "/subjects/3" for 127.0.0.1 at 2017-04-27 12:47:55 -0400
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mSubject Load (0.2ms)[0m  SELECT  "subjects".* FROM "subjects"  WHERE "subjects"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."subject_id" = ?  [["subject_id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered subjects/show.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 192ms (Views: 190.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-04-27 12:47:56 -0400
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-04-27 12:47:56 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-04-27 12:47:56 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-04-27 12:47:56 -0400
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-04-27 12:47:56 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-04-27 12:47:56 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-04-27 12:47:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-04-27 12:47:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:56 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:56 -0400
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:56 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:56 -0400
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:56 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:56 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-04-27 12:47:56 -0400
+
+
+Started GET "/subjects/3/posts/1" for 127.0.0.1 at 2017-04-27 12:48:00 -0400
+Processing by PostsController#show as HTML
+  Parameters: {"subject_id"=>"3", "id"=>"1"}
+  [1m[35mPost Load (0.9ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 77ms (Views: 73.3ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/subjects/3/posts/1" for 127.0.0.1 at 2017-04-27 12:48:04 -0400
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hfpmwfXsuzSMbRqeOQ4nVAzgvMs9+fXaYLxkyv7GZqI=", "subject_id"=>"3", "id"=>"1"}
+  [1m[35mPost Load (0.0ms)[0m  SELECT  "posts".* FROM "posts"  WHERE "posts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.4ms)[0m  DELETE FROM "posts" WHERE "posts"."id" = ?  [["id", 1]]
+  [1m[36m (4.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/subjects
+Completed 302 Found in 29ms (ActiveRecord: 9.9ms)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2017-04-27 12:48:04 -0400
+Processing by SubjectsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT "subjects".* FROM "subjects"[0m
+  Rendered subjects/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 104ms (Views: 102.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-04-27 12:48:04 -0400
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-04-27 12:48:04 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-04-27 12:48:04 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-04-27 12:48:04 -0400
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-04-27 12:48:04 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-04-27 12:48:04 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-04-27 12:48:04 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-04-27 12:48:04 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:04 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:04 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:04 -0400
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:04 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:04 -0400
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:04 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:04 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:04 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:04 -0400
+
+
+Started GET "/subjects/8" for 127.0.0.1 at 2017-04-27 12:48:06 -0400
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mSubject Load (9.9ms)[0m  SELECT  "subjects".* FROM "subjects"  WHERE "subjects"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.0ms)[0m  SELECT "posts".* FROM "posts"  WHERE "posts"."subject_id" = ?  [["subject_id", 8]]
+  Rendered subjects/show.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 80ms (Views: 66.4ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/subjects/8/posts/new" for 127.0.0.1 at 2017-04-27 12:48:07 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"subject_id"=>"8"}
+  [1m[36mSubject Load (7.7ms)[0m  [1mSELECT  "subjects".* FROM "subjects"  WHERE "subjects"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered posts/_form.html.erb (2.3ms)
+  Rendered posts/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 87ms (Views: 76.4ms | ActiveRecord: 7.7ms)
+
+
+Started POST "/subjects/8/posts" for 127.0.0.1 at 2017-04-27 12:48:08 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hfpmwfXsuzSMbRqeOQ4nVAzgvMs9+fXaYLxkyv7GZqI=", "post"=>{"title"=>"sadfsda", "body"=>"sadfasdf"}, "commit"=>"Create Post", "subject_id"=>"8"}
+  [1m[35mSubject Load (1.2ms)[0m  SELECT  "subjects".* FROM "subjects"  WHERE "subjects"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (6.6ms)[0m  [1mINSERT INTO "posts" ("body", "created_at", "subject_id", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["body", "sadfasdf"], ["created_at", "2017-04-27 16:48:08.928664"], ["subject_id", 8], ["title", "sadfsda"], ["updated_at", "2017-04-27 16:48:08.928664"], ["user_id", 2]]
+  [1m[35m (2.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/subjects/8
+Completed 302 Found in 16ms (ActiveRecord: 10.8ms)
+
+
+Started GET "/subjects/8" for 127.0.0.1 at 2017-04-27 12:48:08 -0400
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSubject Load (2.5ms)[0m  [1mSELECT  "subjects".* FROM "subjects"  WHERE "subjects"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."subject_id" = ?[0m  [["subject_id", 8]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered subjects/show.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 79ms (Views: 75.2ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-04-27 12:48:09 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-04-27 12:48:09 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-04-27 12:48:09 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-04-27 12:48:09 -0400
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-04-27 12:48:09 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-04-27 12:48:09 -0400
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-04-27 12:48:09 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-04-27 12:48:09 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:09 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:09 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:09 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:09 -0400
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:09 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:09 -0400
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:09 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:09 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:09 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:09 -0400
+
+
+Started GET "/subjects/8/posts/new" for 127.0.0.1 at 2017-04-27 12:48:10 -0400
+Processing by PostsController#new as HTML
+  Parameters: {"subject_id"=>"8"}
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT  "subjects".* FROM "subjects"  WHERE "subjects"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered posts/_form.html.erb (1.6ms)
+  Rendered posts/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 67ms (Views: 61.4ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/subjects/8/posts" for 127.0.0.1 at 2017-04-27 12:48:12 -0400
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hfpmwfXsuzSMbRqeOQ4nVAzgvMs9+fXaYLxkyv7GZqI=", "post"=>{"title"=>"safsad", "body"=>"adasfsda"}, "commit"=>"Create Post", "subject_id"=>"8"}
+  [1m[35mSubject Load (0.1ms)[0m  SELECT  "subjects".* FROM "subjects"  WHERE "subjects"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.6ms)[0m  [1mINSERT INTO "posts" ("body", "created_at", "subject_id", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["body", "adasfsda"], ["created_at", "2017-04-27 16:48:12.193520"], ["subject_id", 8], ["title", "safsad"], ["updated_at", "2017-04-27 16:48:12.193520"], ["user_id", 2]]
+  [1m[35m (6.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/subjects/8
+Completed 302 Found in 18ms (ActiveRecord: 10.2ms)
+
+
+Started GET "/subjects/8" for 127.0.0.1 at 2017-04-27 12:48:12 -0400
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSubject Load (0.1ms)[0m  [1mSELECT  "subjects".* FROM "subjects"  WHERE "subjects"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mPost Load (0.0ms)[0m  [1mSELECT "posts".* FROM "posts"  WHERE "posts"."subject_id" = ?[0m  [["subject_id", 8]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered subjects/show.html.erb within layouts/application (19.7ms)
+Completed 200 OK in 137ms (Views: 125.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-04-27 12:48:12 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-04-27 12:48:12 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-04-27 12:48:12 -0400
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-04-27 12:48:12 -0400
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-04-27 12:48:12 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-04-27 12:48:12 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-04-27 12:48:12 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-04-27 12:48:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:12 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:12 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:12 -0400
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:12 -0400
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:12 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:12 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:12 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-04-27 12:48:12 -0400
+
+
+Started GET "/subjects" for 127.0.0.1 at 2017-04-27 12:48:14 -0400
+Processing by SubjectsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mSubject Load (0.0ms)[0m  [1mSELECT "subjects".* FROM "subjects"[0m
+  Rendered subjects/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 74ms (Views: 72.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-27 12:48:15 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 87ms (Views: 85.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at 2017-04-27 12:48:16 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (9.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mReview Load (0.3ms)[0m  SELECT "reviews".* FROM "reviews"  WHERE "reviews"."user_id" = ?  [["user_id", 2]]
+  Rendered users/show.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 97ms (Views: 83.4ms | ActiveRecord: 10.3ms)
