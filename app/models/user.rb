@@ -1,7 +1,7 @@
 require 'bcrypt'
 
 class User < ActiveRecord::Base
-  #validates :category, inclusion: ['Tutor', 'Tutee']
+  validates :category, :presence => true
   validates :name, :presence => true
   validates :year, :presence => true
   has_many :posts, class_name: 'Post', dependent: :destroy
