@@ -14,7 +14,7 @@
 <table>
   <thead>
     <tr>
-      <th>Tutors</th>
+      <th>Tutoring Offers</th>
       <th colspan="2"></th>
     </tr>
   </thead>
@@ -22,8 +22,12 @@
   <tbody>
     <% @subject.posts.each do |post| %>
       <tr>
-        <% if post.user.category == 'Tutor' && logged_in? %>
+        <% if logged_in? && post.user.category == 'Tutor'%>
         <td><%= link_to post.title, subject_post_path(@subject, post) %></td>
+        <% if post.user == current_user %>
+        <td><%= link_to 'Edit Post', edit_subject_post_path(@subject, post) %></td>
+        <td><%= link_to 'Destroy Post', subject_post_path(@subject, post), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
         <% end %>
       </tr>
     <% end %>
@@ -33,7 +37,7 @@
 <table>
   <thead>
     <tr>
-      <th>Tutees</th>
+      <th>Tutoring Requests</th>
       <th colspan="2"></th>
     </tr>
   </thead>
@@ -41,8 +45,12 @@
   <tbody>
     <% @subject.posts.each do |post| %>
       <tr>
-        <% if post.user.category == 'Tutee' && logged_in? %>
+        <% if logged_in? && post.user.category == 'Tutee'%>
         <td><%= link_to post.title, subject_post_path(@subject, post) %></td>
+        <% if post.user == current_user %>
+        <td><%= link_to 'Edit Post', edit_subject_post_path(@subject, post) %></td>
+        <td><%= link_to 'Destroy Post', subject_post_path(@subject, post), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
         <% end %>
       </tr>
     <% end %>

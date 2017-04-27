@@ -44,9 +44,9 @@
         <td><%= review.rating %></td>
         <td><%= review.body %></td>
         <td><%= review.author %></td>
-        <% if @user == current_user && logged_in? %>
-        <td><%= link_to 'Edit Status', edit_status_path(status) %></td>
-        <td><%= link_to 'Destroy Status', status, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% if review.author == current_user.name && logged_in? %>
+        <td><%= link_to 'Edit Review', edit_user_review_path(@user, review) %></td>
+        <td><%= link_to 'Delete Review', user_review_path(@user, review), method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <% end %>
       </tr>
     <% end %>
@@ -54,11 +54,11 @@
 </table>
 
 <%= link_to 'Back', subjects_path %>
-<% if logged_in? %>
-<% if @user != current_user %>
+<% if logged_in? && @user != current_user %>
+<% if @user.category == "Tutor" %>
 <%= link_to 'Leave a Review', new_user_review_path(@user) %>
+<% end %>
 <% else %>
 <%= link_to 'Edit', edit_user_path(@user) %>
 <%= link_to 'Destroy', log_out_path, method: :delete, data: { confirm: 'Are you sure?' } %>
-<% end %>
 <% end %>
