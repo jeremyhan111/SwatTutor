@@ -1,0 +1,56 @@
+<% if logged_in? %>
+  <%= 'Hey ' + current_user.name %>!
+<%= link_to 'Logout', log_out_path, :method => :delete %>
+<% else %>
+<%= link_to 'Login', log_in_path %>
+<%= link_to 'Signup', new_user_path %>
+<% end %>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @subject.name %>
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tutors</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @subject.posts.each do |post| %>
+      <tr>
+        <% if post.user.category == 'Tutor' && logged_in? %>
+        <td><%= link_to post.title, subject_post_path(@subject, post) %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tutees</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @subject.posts.each do |post| %>
+      <tr>
+        <% if post.user.category == 'Tutee' && logged_in? %>
+        <td><%= link_to post.title, subject_post_path(@subject, post) %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<!--<%= link_to 'Edit', edit_subject_path(@subject) %> |-->
+<% if logged_in? %>
+<%= link_to 'New Post', new_subject_post_path(@subject) %>
+<% end %>
+<%= link_to 'Back', subjects_path %>

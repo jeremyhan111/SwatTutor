@@ -1,0 +1,21 @@
+<h1>Welcome to SwatTutor!</h1>
+<% if logged_in? %>
+  Hey <%= link_to current_user.name, current_user %>!
+<%= link_to 'Logout', log_out_path, :method => :delete %>
+<% else %>
+<%= link_to 'Login', log_in_path %>
+<%= link_to 'Signup', new_user_path %>
+<% end %>
+<%= link_to 'Subjects', subjects_path %>
+
+
+<% if Subject.count.zero? %>
+<% subjects = ['Astronomy', 'Biology', 'Chemistry', 'Chinese',
+  'Computer Science', 'Economics', 'Engineering', 'Japanese',
+  'Math', 'Physics'] %>
+<% subjects.each do |subject| %>
+  <% @subject = Subject.new %>
+  <% @subject.name = subject%>
+  <% @subject.save %>
+<% end %>
+<% end %>

@@ -1,0 +1,64 @@
+<h1>
+  <%= @user.name + "'s Homepage!" %>
+</h1>
+
+<p>
+  <strong>Category:</strong>
+  <%= @user.category %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @user.year %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Bio:</strong>
+  <%= @user.bio %>
+</p>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Rating</th>
+      <th>Review</th>
+      <th>Author</th>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @user.reviews.each do |review| %>
+      <tr>
+        <td><%= review.rating %></td>
+        <td><%= review.body %></td>
+        <td><%= review.author %></td>
+        <% if @user == current_user && logged_in? %>
+        <td><%= link_to 'Edit Status', edit_status_path(status) %></td>
+        <td><%= link_to 'Destroy Status', status, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'Back', subjects_path %>
+<% if logged_in? %>
+<% if @user != current_user %>
+<%= link_to 'Leave a Review', new_user_review_path(@user) %>
+<% else %>
+<%= link_to 'Edit', edit_user_path(@user) %>
+<%= link_to 'Destroy', log_out_path, method: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>
+<% end %>
