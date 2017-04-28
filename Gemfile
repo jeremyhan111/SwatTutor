@@ -1,6 +1,5 @@
 source 'http://rubygems.org'
 
-gem 'pg'
 
 # Bundle edge Rgem 'pg'ails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
@@ -28,6 +27,10 @@ gem 'spring',        group: :development
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+
+group :production do
+  gem 'pg'
+end
 
 group :development, :test do
   gem 'byebug'
