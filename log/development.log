@@ -40682,3 +40682,95 @@ Migrating to CreateReviews (20170426042128)
   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426042128"]]
   [1m[35m (1.4ms)[0m  commit transaction
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2017-04-28 01:13:41 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "subjects"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subjects" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2017-04-28 05:13:42.080776"], ["name", "Astronomy"], ["updated_at", "2017-04-28 05:13:42.080776"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "subjects" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2017-04-28 05:13:42.085277"], ["name", "Biology"], ["updated_at", "2017-04-28 05:13:42.085277"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "subjects" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2017-04-28 05:13:42.087420"], ["name", "Chemistry"], ["updated_at", "2017-04-28 05:13:42.087420"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "subjects" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2017-04-28 05:13:42.091962"], ["name", "Chinese"], ["updated_at", "2017-04-28 05:13:42.091962"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "subjects" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2017-04-28 05:13:42.094530"], ["name", "Computer Science"], ["updated_at", "2017-04-28 05:13:42.094530"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "subjects" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2017-04-28 05:13:42.096281"], ["name", "Economics"], ["updated_at", "2017-04-28 05:13:42.096281"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "subjects" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2017-04-28 05:13:42.098601"], ["name", "Engineering"], ["updated_at", "2017-04-28 05:13:42.098601"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "subjects" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2017-04-28 05:13:42.101130"], ["name", "Japanese"], ["updated_at", "2017-04-28 05:13:42.101130"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "subjects" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2017-04-28 05:13:42.103707"], ["name", "Math"], ["updated_at", "2017-04-28 05:13:42.103707"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "subjects" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", "2017-04-28 05:13:42.105748"], ["name", "Physics"], ["updated_at", "2017-04-28 05:13:42.105748"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  Rendered welcome/index.html.erb within layouts/application (38.5ms)
+Completed 200 OK in 174ms (Views: 143.0ms | ActiveRecord: 15.2ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-04-28 01:13:42 -0400
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-04-28 01:13:42 -0400
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-04-28 01:13:42 -0400
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-04-28 01:13:42 -0400
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-04-28 01:13:42 -0400
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-04-28 01:13:42 -0400
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-04-28 01:13:42 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-04-28 01:13:42 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-04-28 01:13:42 -0400
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-04-28 01:13:42 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-04-28 01:13:42 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-04-28 01:13:42 -0400
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-04-28 01:13:42 -0400
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-04-28 01:13:42 -0400
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-04-28 01:13:42 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-04-28 01:13:42 -0400
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-04-28 01:13:42 -0400
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-04-28 01:13:42 -0400
