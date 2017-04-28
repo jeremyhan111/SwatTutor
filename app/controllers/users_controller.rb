@@ -59,7 +59,7 @@ class UsersController < ApplicationController
     @user.destroy
     reset_session
     respond_to do |format|
-      format.html { redirect_to root_path, method: :delete, notice: 'User was successfully destroyed.' }
+      format.html { redirect_to root_path, notice: 'User was successfully destroyed.' }
       format.json { head :no_content }
     end
   end
