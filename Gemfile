@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'pg'
-ruby '2.3.4'
+
 # Bundle edge Rgem 'pg'ails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 # Use sqlite3 as the database for Active Record
