@@ -1,5 +1,5 @@
 <% if logged_in? %>
-  <%= 'Hey ' + current_user.name %>!
+  Hey <%= link_to current_user.name, current_user %>!
 <%= link_to 'Logout', log_out_path, :method => :delete %>
 <% else %>
 <%= link_to 'Login', log_in_path %>
