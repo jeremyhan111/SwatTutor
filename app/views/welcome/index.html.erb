@@ -1,21 +1,32 @@
-<h1>Welcome to SwatTutor!</h1>
-<% if logged_in? %>
-  Hey <%= link_to current_user.name, current_user %>!
-<%= link_to 'Logout', log_out_path, :method => :delete %>
-<% else %>
-<%= link_to 'Login', log_in_path %>
-<%= link_to 'Signup', new_user_path %>
-<% end %>
-<%= link_to 'Subjects', subjects_path %>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<div class="container">
+
+	<div class="head">
+		<div class="page-header">
+			<h1>SwatTutor</h1>
+		</div>
+		<h3>For all your tutoring needs</h3>
+
+		<% if logged_in? %>
+		 	Hey <%= link_to current_user.name, current_user %>!
+			<%= link_to 'Logout', log_out_path, :method => :delete %>
+		<% else %>
+			<%= link_to 'Login', log_in_path %>
+			<%= link_to 'Signup', new_user_path %>
+		<% end %>
+		<%= link_to 'Subjects', subjects_path %>
+	</div>
 
 
-<% if Subject.count.zero? %>
-<% subjects = ['Astronomy', 'Biology', 'Chemistry', 'Chinese',
-  'Computer Science', 'Economics', 'Engineering', 'Japanese',
-  'Math', 'Physics'] %>
-<% subjects.each do |subject| %>
-  <% @subject = Subject.new %>
-  <% @subject.name = subject%>
-  <% @subject.save %>
-<% end %>
-<% end %>
+	<% if Subject.count.zero? %>
+		<% subjects = ['Astronomy', 'Biology', 'Chemistry', 'Chinese',
+	  	'Computer Science', 'Economics', 'Engineering', 'Japanese',
+	  	'Math', 'Physics'] %>
+		<% subjects.each do |subject| %>
+			<% @subject = Subject.new %>
+			<% @subject.name = subject%>
+			<% @subject.save %>
+		<% end %>
+	<% end %>
+</div>

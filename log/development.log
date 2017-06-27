@@ -43046,3 +43046,5549 @@ Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-04-28 11:01:25 -04
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-04-28 11:01:25 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 21:48:08 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 754ms (Views: 732.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 21:48:10 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 21:48:10 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 21:48:10 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 21:48:10 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 21:48:10 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 21:48:10 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 21:48:10 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 21:48:10 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 21:48:10 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 21:48:10 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 21:48:10 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 21:48:10 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 21:48:10 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 21:48:10 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 21:48:10 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 21:48:10 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 21:48:10 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 21:48:10 -0700
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-26 21:48:14 -0700
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (76.8ms)
+  Rendered users/new.html.erb within layouts/application (96.6ms)
+Completed 200 OK in 399ms (Views: 380.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2017-06-26 21:48:17 -0700
+Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (0.5ms)[0m  [1mSELECT "subjects".* FROM "subjects"[0m
+  Rendered subjects/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 288ms (Views: 285.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/subjects/5" for 127.0.0.1 at 2017-06-26 21:48:21 -0700
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mSubject Load (0.6ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mPost Load (0.5ms)[0m  [1mSELECT "posts".* FROM "posts" WHERE "posts"."subject_id" = ?[0m  [["subject_id", 5]]
+  Rendered subjects/show.html.erb within layouts/application (69.5ms)
+Completed 200 OK in 384ms (Views: 355.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 21:48:27 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 316ms (Views: 314.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 21:51:32 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 530ms (Views: 508.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 21:51:34 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 21:51:34 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 21:51:34 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 21:51:34 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 21:51:34 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 21:51:34 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 21:51:34 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 21:51:34 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 21:51:34 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 21:51:34 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 21:51:34 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 21:51:34 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 21:51:34 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 21:51:34 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 21:51:34 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 21:51:34 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 21:51:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 21:51:34 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 21:51:48 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 312ms (Views: 311.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 21:51:48 -0700
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 21:51:49 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 21:51:49 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 21:51:49 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 21:51:49 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 21:51:49 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 21:51:49 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 21:51:49 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 21:51:49 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 21:51:49 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 21:51:49 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 21:51:49 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 21:51:49 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 21:51:49 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 21:51:49 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 21:51:49 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 21:51:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 21:51:49 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 21:54:13 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (2.4ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 481ms (Views: 477.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 21:54:13 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 21:54:13 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 21:54:13 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 21:54:13 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 21:54:13 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 21:54:13 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 21:54:13 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 21:54:13 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 21:54:13 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 21:54:14 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 21:54:14 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 21:54:14 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 21:54:14 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 21:54:14 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 21:54:14 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 21:54:14 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 21:54:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 21:54:14 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 21:55:26 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 408ms (Views: 405.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 21:55:27 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 21:55:27 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 21:55:27 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 21:55:27 -0700
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 21:55:27 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 21:55:27 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 21:55:27 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 21:55:27 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 21:55:27 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 21:55:27 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 21:55:27 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 21:55:27 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 21:55:27 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 21:55:27 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 21:55:27 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 21:55:27 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 21:55:27 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 21:55:27 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 21:56:06 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (2.2ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 509ms (Views: 506.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 21:56:07 -0700
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 21:56:07 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 21:56:07 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 21:56:07 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 21:56:07 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 21:56:07 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 21:56:07 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 21:56:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 21:56:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 21:56:07 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 21:56:07 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 21:56:07 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 21:56:07 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 21:56:07 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 21:56:07 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 21:56:07 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 21:56:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 21:56:07 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 21:57:27 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (1.7ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 442ms (Views: 439.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 21:57:28 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 21:57:28 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 21:57:28 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 21:57:28 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 21:57:28 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 21:57:28 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 21:57:28 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 21:57:28 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 21:57:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 21:57:28 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 21:57:28 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 21:57:28 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 21:57:28 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 21:57:28 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 21:57:28 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 21:57:28 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 21:57:28 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 21:57:28 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 21:58:30 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (2.9ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 560ms (Views: 556.1ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 21:58:30 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 21:58:30 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 21:58:30 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 21:58:30 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 21:58:31 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 21:58:31 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 21:58:31 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 21:58:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 21:58:31 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 21:58:31 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 21:58:31 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 21:58:31 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 21:58:31 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 21:58:31 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 21:58:31 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 21:58:31 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 21:58:31 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 21:58:31 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 21:58:56 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 387ms (Views: 386.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 21:58:56 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 21:58:56 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 21:58:56 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 21:58:56 -0700
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 21:58:56 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 21:58:56 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 21:58:56 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 21:58:56 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 21:58:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 21:58:56 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 21:58:56 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 21:58:56 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 21:58:56 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 21:58:56 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 21:58:56 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 21:58:56 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 21:58:56 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 21:58:56 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 21:59:02 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 374ms (Views: 373.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 21:59:02 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 21:59:02 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 21:59:02 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 21:59:02 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 21:59:02 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 21:59:02 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 21:59:02 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 21:59:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 21:59:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 21:59:03 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 21:59:03 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 21:59:03 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 21:59:03 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 21:59:03 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 21:59:03 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 21:59:03 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 21:59:03 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 21:59:03 -0700
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-26 21:59:24 -0700
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (76.4ms)
+  Rendered users/new.html.erb within layouts/application (93.2ms)
+Completed 200 OK in 390ms (Views: 373.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 21:59:41 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 365ms (Views: 363.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 21:59:42 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 21:59:42 -0700
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 21:59:42 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 21:59:42 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 21:59:42 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 21:59:42 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 21:59:42 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 21:59:42 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 21:59:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 21:59:42 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 21:59:42 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 21:59:42 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 21:59:42 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 21:59:42 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 21:59:42 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 21:59:42 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 21:59:42 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 21:59:42 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:00:15 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (1.7ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 786ms (Views: 782.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:00:16 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:00:16 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:00:16 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:00:16 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:00:16 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:00:16 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:00:16 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:00:16 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:00:16 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:00:16 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:00:16 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:00:16 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:00:16 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:00:16 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:00:16 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:00:16 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:00:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:00:16 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:00:37 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 365ms (Views: 363.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:00:38 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:00:38 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:00:38 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:00:38 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:00:38 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:00:38 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:00:38 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:00:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:00:38 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:00:38 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:00:38 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:00:38 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:00:38 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:00:38 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:00:38 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:00:38 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:00:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:00:38 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:01:45 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (1.8ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 697ms (Views: 693.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:01:46 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:01:46 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:01:46 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:01:46 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:01:46 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:01:46 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:01:46 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:01:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:01:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:01:46 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:01:46 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:01:46 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:01:46 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:01:46 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:01:46 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:01:46 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:01:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:01:46 -0700
+
+
+Started GET "/subjects" for 127.0.0.1 at 2017-06-26 22:01:54 -0700
+Processing by SubjectsController#index as HTML
+  [1m[36mSubject Load (1.0ms)[0m  [1mSELECT "subjects".* FROM "subjects"[0m
+  Rendered subjects/index.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 302ms (Views: 299.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2017-06-26 22:06:16 -0700
+Processing by SubjectsController#index as HTML
+  [1m[35mSubject Load (1.1ms)[0m  SELECT "subjects".* FROM "subjects"
+  Rendered subjects/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 215ms (ActiveRecord: 1.1ms)
+
+ActionView::Template::Error (Invalid CSS after "	text-align": expected ";", was ": center;"
+  (in /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/app/assets/stylesheets/welcome.css.scss:9)):
+    2: <html>
+    3: <head>
+    4:   <title>SwatTutor</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/welcome.css.scss:9
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1775990004240735964_70368311016940'
+
+
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.9ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (100.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:06:34 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 394ms (Views: 392.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:34 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:34 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:34 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:34 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:34 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:34 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:34 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:34 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:34 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:34 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:34 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:34 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:34 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:34 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:34 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:34 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:34 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:34 -0700
+
+
+Started GET "/assets/swatutor/app/assets/images/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:06:35 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/swatutor/app/assets/images/color-coded-bookshelves.jpg"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.8ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (115.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:06:43 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 363ms (Views: 362.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:43 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:43 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:43 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:43 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:43 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:43 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:43 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:44 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:44 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:44 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:44 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:44 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:44 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:44 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:44 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:44 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:44 -0700
+
+
+Started GET "/assets/swattutor/app/assets/images/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:06:44 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/swattutor/app/assets/images/color-coded-bookshelves.jpg"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (69.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:06:51 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 351ms (Views: 350.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:51 -0700
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:51 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:51 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:51 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:51 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:51 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:51 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:51 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:51 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:51 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:51 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:51 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:52 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:52 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:52 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:52 -0700
+
+
+Started GET "/assets/app/assets/images/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:06:52 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/app/assets/images/color-coded-bookshelves.jpg"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (68.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:06:57 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 353ms (Views: 352.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:58 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:58 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:58 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:58 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:58 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:58 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:58 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:06:58 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:58 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:58 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:58 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:58 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:58 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:58 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:58 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:58 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:58 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:06:58 -0700
+
+
+Started GET "/assets/assets/images/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:06:58 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/assets/images/color-coded-bookshelves.jpg"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.5ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:07:05 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 351ms (Views: 350.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:07:05 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:07:05 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:07:05 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:07:05 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:07:05 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:07:05 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:07:05 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:07:05 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:07:05 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:07:05 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:07:05 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:07:05 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:07:05 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:07:05 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:07:06 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:07:06 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:07:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:07:06 -0700
+
+
+Started GET "/assets/images/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:07:06 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/color-coded-bookshelves.jpg"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.1ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (88.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:07:37 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (2.0ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 550ms (Views: 547.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:07:38 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:07:38 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:07:38 -0700
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:07:38 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:07:38 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:07:38 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:07:38 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:07:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:07:38 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:07:38 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:07:38 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:07:38 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:07:38 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:07:38 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:07:38 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:07:38 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:07:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:07:38 -0700
+
+
+Started GET "/assets/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:07:38 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/assets/color-coded-bookshelves.jpg"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (80.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:08:03 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 488ms (Views: 487.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:08:04 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:08:04 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:08:04 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:08:04 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:08:04 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:08:04 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:08:04 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:08:04 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:08:04 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:08:04 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:08:04 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:08:04 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:08:04 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:08:04 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:08:04 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:08:04 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:08:04 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:08:04 -0700
+
+
+Started GET "/assets/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:08:04 -0700
+
+ActionController::RoutingError (No route matches [GET] "/assets/assets/color-coded-bookshelves.jpg"):
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.7ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (98.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:09:14 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (1.7ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 703ms (Views: 700.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:09:15 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:09:15 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:09:15 -0700
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:09:15 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:09:15 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:09:15 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:09:15 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:09:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:15 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:15 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:15 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:15 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:15 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:15 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:15 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:15 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:15 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:15 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:09:15 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:09:41 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 370ms (Views: 369.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:09:41 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:09:41 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:09:41 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:09:41 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:09:41 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:09:41 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:09:41 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:09:42 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:42 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:42 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:42 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:42 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:42 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:42 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:42 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:42 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:42 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:09:42 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:09:48 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 374ms (Views: 372.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:09:48 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:09:48 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:09:48 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:09:48 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:09:48 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:09:48 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:09:48 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:09:48 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:48 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:48 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:48 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:48 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:48 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:48 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:49 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:49 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:09:49 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:09:49 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:10:08 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 380ms (Views: 378.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:09 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:09 -0700
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:09 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:09 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:09 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:09 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:09 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:09 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:09 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:09 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:09 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:09 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:09 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:09 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:09 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:09 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:09 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:09 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:10:09 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:10:42 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 393ms (Views: 391.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:43 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:43 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:43 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:43 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:43 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:43 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:43 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:43 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:43 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:43 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:43 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:43 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:43 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:43 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:43 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:43 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:44 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:10:44 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:10:44 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 322ms (Views: 320.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:44 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:44 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:45 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:45 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:45 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:45 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:45 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:45 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:45 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:45 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:45 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:45 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:45 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:45 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:45 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:45 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:45 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:45 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:10:45 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:10:45 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 268ms (Views: 266.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:46 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:46 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:46 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:46 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:46 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:46 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:46 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:10:46 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:46 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:46 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:46 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:46 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:46 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:46 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:46 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:46 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:10:46 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:15:16 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 362ms (Views: 361.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:15:17 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:15:17 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:15:17 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:15:17 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:15:17 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:15:17 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:15:17 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:15:17 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:15:17 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:15:17 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:15:17 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:15:17 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:15:17 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:15:17 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:15:17 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:15:17 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:15:17 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:15:17 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:15:41 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 368ms (Views: 367.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:15:41 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:15:41 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:15:41 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:15:41 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:15:41 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:15:41 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:15:41 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:15:41 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:15:41 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:15:41 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:15:41 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:15:41 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:15:41 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:15:41 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:15:42 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:15:42 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:15:42 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:15:42 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:15:42 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:16:56 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 364ms (Views: 362.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:16:56 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:16:56 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:16:56 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:16:56 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:16:56 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:16:56 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:16:56 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:16:57 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:16:57 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:16:57 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:16:57 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:16:57 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:16:57 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:16:57 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:16:57 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:16:57 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:16:57 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:16:57 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:16:57 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:17:38 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (1.4ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 394ms (Views: 391.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:17:38 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:17:38 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:17:38 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:17:38 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:17:38 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:17:38 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:17:38 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:17:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:17:38 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:17:38 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:17:38 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:17:38 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:17:38 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:17:38 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:17:38 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:17:38 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:17:38 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:17:39 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:17:39 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:17:40 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 267ms (Views: 265.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:17:40 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:17:40 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:17:40 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:17:40 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:17:40 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:17:40 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:17:40 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:17:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:17:41 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:17:41 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:17:41 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:17:41 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:17:41 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:17:41 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:17:41 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:17:41 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:17:41 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:17:41 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:17:41 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:19:06 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 358ms (Views: 356.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:19:06 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:19:06 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:19:06 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:19:06 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:19:06 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:19:06 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:19:06 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:19:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:19:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:19:06 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:19:06 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:19:06 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:19:07 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:19:07 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:19:07 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:19:07 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:19:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:19:07 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:19:07 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:19:15 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 350ms (Views: 349.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:19:15 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:19:15 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:19:15 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:19:15 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:19:15 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:19:15 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:19:15 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:19:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:19:15 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:19:15 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:19:15 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:19:15 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:19:15 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:19:15 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:19:16 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:19:16 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:19:16 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:19:16 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:19:16 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:20:27 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 354ms (Views: 352.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:20:28 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:20:28 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:20:28 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:20:28 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:20:28 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:20:28 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:20:28 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:20:28 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:28 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:28 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:28 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:28 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:28 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:28 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:28 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:28 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:28 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:20:28 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:20:44 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 367ms (Views: 366.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:20:44 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:20:44 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:20:44 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:20:44 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:20:44 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:20:44 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:20:44 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:20:44 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:44 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:44 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:44 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:44 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:44 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:44 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:44 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:44 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:44 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:20:45 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:20:57 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 360ms (Views: 359.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:20:57 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:20:57 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:20:57 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:20:57 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:20:57 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:20:57 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:20:57 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:20:57 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:57 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:57 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:57 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:57 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:57 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:57 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:57 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:57 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:57 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:20:57 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:20:58 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:21:18 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 283ms (Views: 282.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:18 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:18 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:18 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:18 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:19 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:19 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:19 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:19 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:19 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:19 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:19 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:19 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:19 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:19 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:19 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:19 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:21:19 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:21:22 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 269ms (Views: 268.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:23 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:23 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:23 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:23 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:23 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:23 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:23 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:23 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:23 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:23 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:23 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:23 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:23 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:23 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:23 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:23 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:21:23 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:21:36 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 498ms (Views: 497.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:36 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:36 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:36 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:36 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:36 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:36 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:36 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:37 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:37 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:37 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:37 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:37 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:37 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:37 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:37 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:21:37 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:21:50 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 344ms (Views: 342.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:51 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:51 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:51 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:51 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:51 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:51 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:51 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:51 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:51 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:51 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:51 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:51 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:51 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:51 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:51 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:51 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:51 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:51 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:21:51 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:21:58 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 347ms (Views: 345.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:58 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:58 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:58 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:58 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:58 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:58 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:58 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:21:58 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:58 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:58 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:58 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:58 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:58 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:58 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:58 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:58 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:58 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:21:58 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:21:59 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:22:16 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 353ms (Views: 352.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:22:17 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:22:17 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:22:17 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:22:17 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:22:17 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:22:17 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:22:17 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:22:17 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:17 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:17 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:17 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:17 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:17 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:17 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:17 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:17 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:17 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:17 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:22:18 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:22:41 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 358ms (Views: 356.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:22:41 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:22:41 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:22:41 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:22:41 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:22:42 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:22:42 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:22:42 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:22:42 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:42 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:42 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:42 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:42 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:42 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:42 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:42 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:42 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:42 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:22:42 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:22:44 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 269ms (Views: 268.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:22:44 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:22:44 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:22:44 -0700
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:22:44 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:22:44 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:22:44 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:22:44 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:22:44 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:44 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:44 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:44 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:44 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:44 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:44 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:44 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:44 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:22:44 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:22:44 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:22:59 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 356ms (Views: 355.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:23:00 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:23:00 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:23:00 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:23:00 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:23:00 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:23:00 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:23:00 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:23:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:00 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:00 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:00 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:00 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:00 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:00 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:00 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:00 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:00 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:23:00 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:23:01 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 283ms (Views: 282.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:23:02 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:23:02 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:23:02 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:23:02 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:23:02 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:23:02 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:23:02 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:23:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:02 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:02 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:02 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:02 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:02 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:02 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:02 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:02 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:02 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:23:02 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:23:58 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 354ms (Views: 353.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:23:59 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:23:59 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:23:59 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:23:59 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:23:59 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:23:59 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:23:59 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:23:59 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:59 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:59 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:59 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:59 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:59 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:59 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:59 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:59 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:59 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:23:59 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:23:59 -0700
+
+
+Started GET "/subjects" for 127.0.0.1 at 2017-06-26 22:26:49 -0700
+Processing by SubjectsController#index as HTML
+  [1m[35mSubject Load (0.5ms)[0m  SELECT "subjects".* FROM "subjects"
+  Rendered subjects/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 307ms (Views: 305.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:27:26 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 364ms (Views: 362.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:27:26 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:27:26 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:27:26 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:27:26 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:27:26 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:27:26 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:27:26 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:27:26 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:27:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:27:26 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:27:26 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:27:26 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:27:26 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:27:26 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:27:26 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:27:26 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:27:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:27:26 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:27:27 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:27:28 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 290ms (Views: 288.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:27:29 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:27:29 -0700
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:27:29 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:27:29 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:27:29 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:27:29 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:27:29 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:27:29 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:27:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:27:29 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:27:29 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:27:29 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:27:29 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:27:29 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:27:29 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:27:29 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:27:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:27:29 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:27:29 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:29:34 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 369ms (Views: 368.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:29:35 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:29:35 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:29:35 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:29:35 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:29:35 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:29:35 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:29:35 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:29:35 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:29:35 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:29:35 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:29:35 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:29:35 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:29:35 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:29:35 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:29:35 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:29:35 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:29:35 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:29:35 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:29:35 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:30:24 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 356ms (Views: 354.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:30:25 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:30:25 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:30:25 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:30:25 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:30:25 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:30:25 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:30:25 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:30:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:30:25 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:30:25 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:30:25 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:30:25 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:30:25 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:30:25 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:30:25 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:30:25 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:30:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:30:25 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:30:25 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:32:18 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (Invalid CSS after "": expected selector, was ""
+  (in /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/app/assets/stylesheets/welcome.css.scss:17)):
+    2: <html>
+    3: <head>
+    4:   <title>SwatTutor</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/welcome.css.scss:17
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1775990004240735964_70368311016940'
+
+
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:32:31 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 365ms (Views: 363.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:32:31 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:32:31 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:32:31 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:32:31 -0700
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:32:31 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:32:31 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:32:31 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:32:31 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:32:31 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:32:31 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:32:31 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:32:31 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:32:31 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:32:32 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:32:32 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:32:32 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:32:32 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:32:32 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:32:32 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:34:19 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 276ms (Views: 275.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:34:19 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:34:19 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:34:19 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:34:19 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:34:19 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:34:19 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:34:19 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:34:19 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:34:19 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:34:19 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:34:19 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:34:19 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:34:19 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:34:19 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:34:19 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:34:19 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:34:20 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:34:20 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:34:20 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:34:34 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 362ms (Views: 361.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:34:34 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:34:34 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:34:34 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:34:34 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:34:34 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:34:34 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:34:35 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:34:35 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:34:35 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:34:35 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:34:35 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:34:35 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:34:35 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:34:35 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:34:35 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:34:35 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:34:35 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:34:35 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:34:35 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:37:04 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 376ms (Views: 375.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:37:04 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:37:04 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:37:04 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:37:04 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:37:04 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:37:04 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:37:04 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:37:04 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:37:04 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:37:04 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:37:04 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:37:04 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:37:04 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:37:04 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:37:05 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:37:05 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:37:05 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:37:05 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:37:05 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:37:06 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 266ms (Views: 265.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:37:06 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:37:06 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:37:06 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:37:06 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:37:06 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:37:06 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:37:06 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:37:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:37:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:37:06 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:37:06 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:37:06 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:37:06 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:37:06 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:37:06 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:37:06 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:37:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:37:06 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:37:07 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:38:11 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 365ms (Views: 363.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:11 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:12 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:12 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:12 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:12 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:12 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:12 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:12 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:12 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:12 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:12 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:12 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:12 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:12 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:12 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:12 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:12 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:12 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:38:12 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:38:28 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 357ms (Views: 356.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:29 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:29 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:29 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:29 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:29 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:29 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:29 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:29 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:29 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:29 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:29 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:29 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:29 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:29 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:29 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:29 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:38:29 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:38:38 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 392ms (Views: 390.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:38 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:38 -0700
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:38 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:38 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:38 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:38 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:38 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:38 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:38 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:38 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:38 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:39 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:39 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:39 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:39 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:39 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:39 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:38:39 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:38:43 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 277ms (Views: 276.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:44 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:44 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:44 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:44 -0700
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:44 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:44 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:44 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:44 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:44 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:44 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:44 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:44 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:44 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:44 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:44 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:44 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:44 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:38:46 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 270ms (Views: 269.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:47 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:47 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:47 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:47 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:47 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:47 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:47 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:47 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:47 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:47 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:47 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:47 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:47 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:47 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:47 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:47 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:47 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:38:56 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 347ms (Views: 345.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:56 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:56 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:56 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:56 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:56 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:57 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:57 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:38:57 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:57 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:57 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:57 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:57 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:57 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:57 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:57 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:57 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:57 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:38:57 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:38:57 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:39:03 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 347ms (Views: 345.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:03 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:03 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:03 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:03 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:03 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:03 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:03 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:03 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:03 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:03 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:03 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:03 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:03 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:03 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:03 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:03 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:03 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:03 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:39:04 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:39:10 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 359ms (Views: 357.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:10 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:10 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:10 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:10 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:10 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:10 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:10 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:10 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:11 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:11 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:11 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:11 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:11 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:11 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:11 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:11 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:39:11 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:39:24 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 351ms (Views: 349.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:25 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:25 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:25 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:25 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:25 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:25 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:25 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:25 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:25 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:25 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:25 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:25 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:25 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:25 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:25 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:25 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:39:25 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:39:36 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 342ms (Views: 340.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:36 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:36 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:36 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:36 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:36 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:36 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:36 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:36 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:36 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:36 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:36 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:37 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:37 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:37 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:37 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:37 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:39:37 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:39:45 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 350ms (Views: 349.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:45 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:45 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:45 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:45 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:45 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:45 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:45 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:39:45 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:45 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:45 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:45 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:46 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:46 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:46 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:46 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:46 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:46 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:39:46 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:39:46 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:40:10 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 364ms (Views: 363.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:40:10 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:40:10 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:40:10 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:40:10 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:40:10 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:40:10 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:40:10 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:40:10 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:40:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:40:11 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:40:11 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:40:11 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:40:11 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:40:11 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:40:11 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:40:11 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:40:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:40:11 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:40:11 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:40:22 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 382ms (Views: 381.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:40:23 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:40:23 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:40:23 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:40:23 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:40:23 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:40:23 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:40:23 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:40:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:40:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:40:23 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:40:23 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:40:23 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:40:23 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:40:23 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:40:23 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:40:23 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:40:23 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:40:23 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:40:23 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:42:22 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 380ms (Views: 379.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:42:22 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:42:22 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:42:22 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:42:22 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:42:22 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:42:22 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:42:22 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:42:22 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:42:22 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:42:22 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:42:22 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:42:22 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:42:22 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:42:22 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:42:22 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:42:22 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:42:22 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:42:22 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:42:23 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:42:48 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 285ms (Views: 283.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:42:48 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:42:48 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:42:48 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:42:48 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:42:48 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:42:48 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:42:48 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:42:48 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:42:49 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:42:49 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:42:49 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:42:49 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:42:49 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:42:49 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:42:49 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:42:49 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:42:49 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:42:49 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:42:49 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:44:28 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 372ms (Views: 371.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:44:28 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:44:28 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:44:28 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:44:28 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:44:28 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:44:28 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:44:28 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:44:29 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:44:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:44:29 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:44:29 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:44:29 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:44:29 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:44:29 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:44:29 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:44:29 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:44:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:44:29 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:44:29 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:44:54 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 376ms (Views: 375.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:44:54 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:44:55 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:44:55 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:44:55 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:44:55 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:44:55 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:44:55 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:44:55 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:44:55 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:44:55 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:44:55 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:44:55 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:44:55 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:44:55 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:44:55 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:44:55 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:44:55 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:44:55 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:44:55 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:45:01 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 347ms (Views: 346.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:45:01 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:45:01 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:45:01 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:45:01 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:45:01 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:45:01 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:45:01 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:45:01 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:45:01 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:45:02 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:45:02 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:45:02 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:45:02 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:45:02 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:45:02 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:45:02 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:45:02 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:45:02 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:45:02 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:45:54 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 353ms (Views: 352.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:45:55 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:45:55 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:45:55 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:45:55 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:45:55 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:45:55 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:45:55 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:45:55 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:45:55 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:45:55 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:45:55 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:45:55 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:45:55 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:45:55 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:45:55 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:45:55 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:45:55 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:45:55 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:45:56 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:46:16 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 362ms (Views: 360.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:46:17 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:46:17 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:46:17 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:46:17 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:46:17 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:46:17 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:46:17 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:46:17 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:17 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:17 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:17 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:17 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:17 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:17 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:17 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:17 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:17 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:17 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:46:17 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:46:29 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 367ms (Views: 365.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:46:30 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:46:30 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:46:30 -0700
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:46:30 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:46:30 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:46:30 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:46:30 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:46:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:30 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:30 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:30 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:30 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:30 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:30 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:30 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:30 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:30 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:30 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:46:30 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:46:43 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 352ms (Views: 351.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:46:44 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:46:44 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:46:44 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:46:44 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:46:44 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:46:44 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:46:44 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:46:44 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:44 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:44 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:44 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:44 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:44 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:44 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:44 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:44 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:46:44 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:46:45 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:47:09 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.5ms)
+
+ActionView::Template::Error (Invalid CSS after "	font-size 20px": expected "{", was ";"
+  (in /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/app/assets/stylesheets/welcome.css.scss:19)):
+    2: <html>
+    3: <head>
+    4:   <title>SwatTutor</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/welcome.css.scss:19
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1775990004240735964_70368311016940'
+
+
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:47:20 -0700
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 379ms (Views: 377.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:47:21 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:47:21 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:47:21 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:47:21 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:47:21 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:47:21 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:47:21 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:47:21 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:47:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:47:21 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:47:21 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:47:21 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:47:21 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:47:21 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:47:21 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:47:21 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:47:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:47:21 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:47:22 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-26 22:47:22 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 269ms (Views: 268.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-26 22:47:23 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-26 22:47:23 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-26 22:47:23 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-26 22:47:23 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-26 22:47:23 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-26 22:47:23 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-26 22:47:23 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-26 22:47:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-26 22:47:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-26 22:47:23 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-26 22:47:23 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-26 22:47:23 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-26 22:47:23 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-26 22:47:23 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-26 22:47:23 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-26 22:47:23 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-26 22:47:23 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-26 22:47:23 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-26 22:47:23 -0700
