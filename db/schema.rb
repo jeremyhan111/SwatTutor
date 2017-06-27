@@ -13,7 +13,7 @@
 
 ActiveRecord::Schema.define(version: 20170426042128) do
 
-  create_table "posts", force: true do |t|
+  create_table "posts", force: :cascade do |t|
     t.string   "title"
     t.text     "body"
     t.integer  "user_id"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20170426042128) do
     t.datetime "updated_at"
   end
 
-  create_table "reviews", force: true do |t|
+  create_table "reviews", force: :cascade do |t|
     t.integer  "rating"
     t.text     "body"
     t.string   "author"
@@ -31,13 +31,13 @@ ActiveRecord::Schema.define(version: 20170426042128) do
     t.datetime "updated_at"
   end
 
-  create_table "subjects", force: true do |t|
+  create_table "subjects", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "users", force: true do |t|
+  create_table "users", force: :cascade do |t|
     t.string   "email"
     t.string   "password_hash"
     t.string   "category"

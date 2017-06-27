@@ -4,8 +4,7 @@
 
 
 
-.container {
-	margin-top: 50px;
+/*#welcome {
 	height: 657px;
 	width: 1600px;
 	background-image: image_url("color-coded-bookshelves.jpg");
@@ -13,7 +12,32 @@
     background-blend-mode: lighten;
 	text-align: center;
 	font-family: Monotype Corsiva, cursive;
+}*/
+html {
+	margin-top: 45px;
+	height: 657px;
+	width: 1600px;
+	border: 1px solid #ccc;
+    background-color: #f3f3f3;
+    background-image: image_url("color-coded-bookshelves.jpg");
+	background-color: rgba(255,255,255,0.6);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
 }
+
+#welcome {
+	position:fixed;
+    top: 45%;
+    left: 50%;
+    width:30em;
+    height:18em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    text-align: center;
+    font-family: Monotype Corsiva, cursive;
+}
+
+
 
 .head {
 	margin-top:200px;

@@ -1,27 +1,29 @@
-<% if logged_in? %>
-  Hey <%= link_to current_user.name, current_user %>!
-<%= link_to 'Logout', log_out_path, :method => :delete %>
-<% else %>
-<%= link_to 'Login', log_in_path %>
-<%= link_to 'Signup', new_user_path %>
-<% end %>
-<h1>Subjects</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <% if logged_in? %>
+    Hey <%= link_to current_user.name, current_user %>!
+  <%= link_to 'Logout', log_out_path, :method => :delete %>
+  <% else %>
+  <%= link_to 'Login', log_in_path %>
+  <%= link_to 'Signup', new_user_path %>
+  <% end %>
+  <h1>Subjects</h1>
 
-  <tbody>
-    <% @subjects.each do |subject| %>
+  <table>
+    <thead>
       <tr>
-        <td><%= link_to subject.name, subject %></td>
+        <th>Name</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<%= link_to 'Back', root_path %>
+    <tbody>
+      <% @subjects.each do |subject| %>
+        <tr>
+          <td><%= link_to subject.name, subject %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <%= link_to 'Back', root_path %>
+
