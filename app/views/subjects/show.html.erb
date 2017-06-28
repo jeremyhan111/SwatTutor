@@ -1,69 +1,71 @@
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 <header>
+  <%= link_to 'Back', subjects_path %>
   <% if logged_in? %>
     Hey <%= link_to current_user.name, current_user %>!
-  <%= link_to 'Logout', log_out_path, :method => :delete %>
+    <%= link_to 'Logout', log_out_path, :method => :delete %>
   <% else %>
-  <%= link_to 'Login', log_in_path %>
-  <%= link_to 'Signup', new_user_path %>
+    <%= link_to 'Login', log_in_path %>
+    <%= link_to 'Signup', new_user_path %>
   <% end %>
-</header>
+</header> 
 
-<p>
-  <h1><%= @subject.name %></h1>
-</p>
+<div class="container">
+  <h1 class="show"><%= @subject.name %></h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Tutoring Offers</th>
-      <th>Created At</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <p>See if any of the following offers or requests match what you need. If not, make a new post if you are logged in :-)</p>
 
-  <tbody>
-    <% @subject.posts.each do |post| %>
+  <table class="table table-bordered table-striped table-hover">
+    <thead>
       <tr>
-        <% if post.user.category == 'Tutor'%>
-        <td><%= link_to post.title, subject_post_path(@subject, post) %></td>
-        <td><%= post.created_at%>
-        <% if logged_in? && post.user == current_user %>
-        <td><%= link_to 'Edit Post', edit_subject_post_path(@subject, post) %></td>
-        <td><%= link_to 'Destroy Post', subject_post_path(@subject, post), method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <% end %>
-        <% end %>
+        <th class="text-center col-lg-6 col-md-6 col-sm-6 col-xs-6">Tutoring Offers</th>
+        <th class="text-center col-lg-6 col-md-6 col-sm-6 col-xs-6">Created At</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
------------------------------------------
-<table>
-  <thead>
-    <tr>
-      <th>Tutoring Requests</th>
-      <th>Created At</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    </thead>
 
-  <tbody>
-    <% @subject.posts.each do |post| %>
+    <tbody>
+      <% @subject.posts.each do |post| %>
+        <tr>
+          <% if post.user.category == 'Tutor'%>
+            <td><%= link_to post.title, subject_post_path(@subject, post) %></td>
+            <td><%= post.created_at.localtime.to_formatted_s(:long_ordinal)%>
+            <% if logged_in? && post.user == current_user %>
+              <%= link_to 'Edit Post', edit_subject_post_path(@subject, post) %>
+              <%= link_to 'Destroy Post', subject_post_path(@subject, post), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <% end %>
+          <% end %>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <table class="table table-bordered table-striped table-hover">
+    <thead>
       <tr>
-        <% if post.user.category == 'Tutee'%>
-        <td><%= link_to post.title, subject_post_path(@subject, post) %></td>
-        <td><%= post.created_at%>
-        <% if logged_in? && post.user == current_user %>
-        <td><%= link_to 'Edit Post', edit_subject_post_path(@subject, post) %></td>
-        <td><%= link_to 'Destroy Post', subject_post_path(@subject, post), method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <% end %>
-        <% end %>
+        <th class="text-center col-lg-6 col-md-6 col-sm-6 col-xs-6">Tutoring Requests</th>
+        <th class="text-center col-lg-6 col-md-6 col-sm-6 col-xs-6">Created At</th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
+
+    <tbody>
+      <% @subject.posts.each do |post| %>
+        <tr>
+          <% if post.user.category == 'Tutee'%>
+            <td><%= link_to post.title, subject_post_path(@subject, post) %></td>
+            <td><%= post.created_at.localtime.to_formatted_s(:long_ordinal) %>
+            <% if logged_in? && post.user == current_user %>
+              <%= link_to 'Edit Post', edit_subject_post_path(@subject, post) %>
+              <%= link_to 'Destroy Post', subject_post_path(@subject, post), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <% end %>
+          <% end %>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
 
 <!--<%= link_to 'Edit', edit_subject_path(@subject) %> |-->
 <% if logged_in? %>
 <%= link_to 'New Post', new_subject_post_path(@subject) %>
 <% end %>
-<%= link_to 'Back', subjects_path %>

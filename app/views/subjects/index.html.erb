@@ -1,24 +1,21 @@
 
   <header>
+    <%= link_to 'Back', root_path %>
     <% if logged_in? %>
       Hey <%= link_to current_user.name, current_user %>!
-    <%= link_to 'Logout', log_out_path, :method => :delete %>
+      <%= link_to 'Logout', log_out_path, :method => :delete %>
     <% else %>
-    <%= link_to 'Login', log_in_path %>
-    <%= link_to 'Signup', new_user_path %>
+      <%= link_to 'Login', log_in_path %>
+      <%= link_to 'Signup', new_user_path %>
     <% end %>
   </header>
 
 <div id="subjects-background">
-  <body>
     <h1>Subjects</h1>
     <ul>
         <% @subjects.each do |subject| %>
             <li><%= link_to subject.name, subject %></li>
         <% end %>
     </ul>
-  </body>
-
-  <%= link_to 'Back', root_path %>
 </div>
 

@@ -37,6 +37,7 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+gem 'friendly_id'
 # Use unicorn as the app server
 # gem 'unicorn'
 
