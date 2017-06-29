@@ -6,6 +6,7 @@ class User < ActiveRecord::Base
   validates :year, :presence => true
   has_many :posts, class_name: 'Post', dependent: :destroy
   has_many :reviews, class_name: 'Review', dependent: :destroy
+  attr_accessor :avatar
   attr_readonly :category
   has_attached_file :avatar, styles: {
     thumb: '100x100>',
@@ -21,9 +22,6 @@ class User < ActiveRecord::Base
   end
 
   def password=(new_password)
-    p 'hi'
-    p new_password
-    p 'bye'
     @password = Password.create(new_password)
     self.password_hash = @password
   end
