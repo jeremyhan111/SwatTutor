@@ -14,13 +14,21 @@
 <div class="container">
   <h1 class="show"><%= @subject.name %></h1>
 
-  <p>See if any of the following offers or requests match what you need. If not, make a new post if you are logged in :-)</p>
+  <p>See if any of the following offers or requests match what you need. If not, make a 
+  <% if logged_in? %>
+    <%= link_to 'new post', new_subject_post_path(@subject) %>
+  <% else %>
+    new post
+  <% end %>
+
+    if you are logged in :-)</p>
 
   <table class="table table-bordered table-striped table-hover">
     <thead>
       <tr>
-        <th class="text-center col-lg-6 col-md-6 col-sm-6 col-xs-6">Tutoring Offers</th>
-        <th class="text-center col-lg-6 col-md-6 col-sm-6 col-xs-6">Created At</th>
+        <th class="text-center col-lg-6 col-md-4 col-sm-4 col-xs-4">Tutoring Offers</th>
+        <th class="text-center col-lg-3 col-md-4 col-sm-4 col-xs-4">Author</th>
+        <th class="text-center col-lg-3 col-md-4 col-sm-4 col-xs-4">Created At</th>
       </tr>
     </thead>
 
@@ -29,10 +37,11 @@
         <tr>
           <% if post.user.category == 'Tutor'%>
             <td><%= link_to post.title, subject_post_path(@subject, post) %></td>
+            <td><%= link_to post.user.name, post.user %></td>
             <td><%= post.created_at.localtime.to_formatted_s(:long_ordinal)%>
             <% if logged_in? && post.user == current_user %>
-              <%= link_to 'Edit Post', edit_subject_post_path(@subject, post) %>
-              <%= link_to 'Destroy Post', subject_post_path(@subject, post), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              <%= link_to 'Edit', edit_subject_post_path(@subject, post) %>
+              <%= link_to 'Delete', subject_post_path(@subject, post), method: :delete, data: { confirm: 'Are you sure?' } %></td>
             <% end %>
           <% end %>
         </tr>
@@ -43,8 +52,9 @@
   <table class="table table-bordered table-striped table-hover">
     <thead>
       <tr>
-        <th class="text-center col-lg-6 col-md-6 col-sm-6 col-xs-6">Tutoring Requests</th>
-        <th class="text-center col-lg-6 col-md-6 col-sm-6 col-xs-6">Created At</th>
+        <th class="text-center col-lg-6 col-md-4 col-sm-4 col-xs-4">Tutoring Requests</th>
+        <th class="text-center col-lg-3 col-md-4 col-sm-4 col-xs-4">Author</th>
+        <th class="text-center col-lg-3 col-md-4 col-sm-4 col-xs-4">Created At</th>
       </tr>
     </thead>
 
@@ -53,10 +63,11 @@
         <tr>
           <% if post.user.category == 'Tutee'%>
             <td><%= link_to post.title, subject_post_path(@subject, post) %></td>
+            <td><%= link_to post.user.name, post.user %></td>
             <td><%= post.created_at.localtime.to_formatted_s(:long_ordinal) %>
             <% if logged_in? && post.user == current_user %>
-              <%= link_to 'Edit Post', edit_subject_post_path(@subject, post) %>
-              <%= link_to 'Destroy Post', subject_post_path(@subject, post), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              <%= link_to 'Edit', edit_subject_post_path(@subject, post) %>
+              <%= link_to 'Delete', subject_post_path(@subject, post), method: :delete, data: { confirm: 'Are you sure?' } %></td>
             <% end %>
           <% end %>
         </tr>
@@ -64,8 +75,3 @@
     </tbody>
   </table>
 </div>
-
-<!--<%= link_to 'Edit', edit_subject_path(@subject) %> |-->
-<% if logged_in? %>
-<%= link_to 'New Post', new_subject_post_path(@subject) %>
-<% end %>

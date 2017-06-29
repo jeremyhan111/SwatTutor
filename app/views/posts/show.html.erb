@@ -1,16 +1,16 @@
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+<header>
+  	<%= link_to 'Back', subjects_path %>
+  	<% if logged_in? %>
+    	Hey <%= link_to current_user.name, current_user %>!
+    	<%= link_to 'Logout', log_out_path, :method => :delete %>
+  	<% else %>
+    	<%= link_to 'Login', log_in_path %>
+    	<%= link_to 'Signup', new_user_path %>
+  	<% end %>
+</header> 
 
-<p>
-  <strong>Body:</strong>
-  <%= @post.body %>
-</p>
-
-<p>
-  <strong>Author:</strong>
-  <%= link_to @post.user.name,  @post.user%>
-</p>
-
-<%= link_to 'Back', subjects_path %>
+<div class="container">
+	<%= @post.title %>
+  	<%= @post.body %>
+  	<%= link_to @post.user.name,  @post.user%>
+</div>

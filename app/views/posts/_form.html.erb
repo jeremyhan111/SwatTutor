@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 <%= form_for([@post.subject, @post]) do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
@@ -13,7 +15,7 @@
 
   <div class="field">
     <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.text_field :title, placeholder: "ex: Offering/Requesting Math101 for $20/hr", :size=>"50" %>
   </div>
   <div class="field">
     <%= f.label :body %><br>
