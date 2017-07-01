@@ -6,6 +6,10 @@ class CreateUsers < ActiveRecord::Migration
       t.string :category
       t.string :name
       t.string :year
+      t.string :avatar_file_name
+      t.string :avatar_content_type
+      t.integer :avatar_file_size
+      t.datetime :avatar_updated_at
       t.text :bio
 
       t.timestamps

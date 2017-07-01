@@ -70849,3 +70849,1007 @@ Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-28 20:24:41 -07
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-28 20:24:41 -0700
+  [1m[36m (7.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (5.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePosts (20170425212204)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170425212204_create_posts.rb:9)
+  [1m[35m (2.2ms)[0m  CREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "user_id" integer, "subject_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170425212204"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+Migrating to CreateUsers (20170426004710)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426004710_create_users.rb:11)
+  [1m[35m (1.8ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password_hash" varchar, "category" varchar, "name" varchar, "year" varchar, "bio" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426004710"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+Migrating to CreateSubjects (20170426032707)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426032707_create_subjects.rb:6)
+  [1m[35m (2.1ms)[0m  CREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426032707"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+Migrating to CreateReviews (20170426042128)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426042128_create_reviews.rb:9)
+  [1m[35m (2.4ms)[0m  CREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "rating" integer, "body" text, "author" varchar, "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426042128"]]
+  [1m[35m (3.4ms)[0m  commit transaction
+Migrating to AddAvatarToUsers (20170629031304)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170629031304"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-28 23:30:14 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Arabic"], ["created_at", "2017-06-29 06:30:14.373367"], ["updated_at", "2017-06-29 06:30:14.373367"]]
+  [1m[36m (4.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Astronomy"], ["created_at", "2017-06-29 06:30:14.384730"], ["updated_at", "2017-06-29 06:30:14.384730"]]
+  [1m[35m (4.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Biology"], ["created_at", "2017-06-29 06:30:14.393916"], ["updated_at", "2017-06-29 06:30:14.393916"]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Biochemistry"], ["created_at", "2017-06-29 06:30:14.402572"], ["updated_at", "2017-06-29 06:30:14.402572"]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Chemistry"], ["created_at", "2017-06-29 06:30:14.412641"], ["updated_at", "2017-06-29 06:30:14.412641"]]
+  [1m[36m (3.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Chinese"], ["created_at", "2017-06-29 06:30:14.423768"], ["updated_at", "2017-06-29 06:30:14.423768"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.6ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Cognitive Science"], ["created_at", "2017-06-29 06:30:14.433173"], ["updated_at", "2017-06-29 06:30:14.433173"]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Computer Science"], ["created_at", "2017-06-29 06:30:14.444025"], ["updated_at", "2017-06-29 06:30:14.444025"]]
+  [1m[35m (4.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Economics"], ["created_at", "2017-06-29 06:30:14.454657"], ["updated_at", "2017-06-29 06:30:14.454657"]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.6ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Engineering"], ["created_at", "2017-06-29 06:30:14.463576"], ["updated_at", "2017-06-29 06:30:14.463576"]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "French"], ["created_at", "2017-06-29 06:30:14.473471"], ["updated_at", "2017-06-29 06:30:14.473471"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "German"], ["created_at", "2017-06-29 06:30:14.482141"], ["updated_at", "2017-06-29 06:30:14.482141"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Greek"], ["created_at", "2017-06-29 06:30:14.492254"], ["updated_at", "2017-06-29 06:30:14.492254"]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "History"], ["created_at", "2017-06-29 06:30:14.500684"], ["updated_at", "2017-06-29 06:30:14.500684"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Japanese"], ["created_at", "2017-06-29 06:30:14.509864"], ["updated_at", "2017-06-29 06:30:14.509864"]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (2.4ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Latin"], ["created_at", "2017-06-29 06:30:14.519765"], ["updated_at", "2017-06-29 06:30:14.519765"]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Linguistics"], ["created_at", "2017-06-29 06:30:14.529286"], ["updated_at", "2017-06-29 06:30:14.529286"]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Math"], ["created_at", "2017-06-29 06:30:14.540010"], ["updated_at", "2017-06-29 06:30:14.540010"]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.3ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Music Theory"], ["created_at", "2017-06-29 06:30:14.550047"], ["updated_at", "2017-06-29 06:30:14.550047"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Physics"], ["created_at", "2017-06-29 06:30:14.558143"], ["updated_at", "2017-06-29 06:30:14.558143"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Russian"], ["created_at", "2017-06-29 06:30:14.566563"], ["updated_at", "2017-06-29 06:30:14.566563"]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Spanish"], ["created_at", "2017-06-29 06:30:14.576689"], ["updated_at", "2017-06-29 06:30:14.576689"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Statistics"], ["created_at", "2017-06-29 06:30:14.584659"], ["updated_at", "2017-06-29 06:30:14.584659"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  Rendered welcome/index.html.erb within layouts/application (270.7ms)
+Completed 200 OK in 793ms (Views: 627.2ms | ActiveRecord: 139.7ms)
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-28 23:30:15 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-28 23:30:15 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-28 23:30:15 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-28 23:30:15 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-28 23:30:15 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-28 23:30:15 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-28 23:30:15 -0700
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-28 23:30:15 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-28 23:30:15 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-28 23:30:15 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-28 23:30:15 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-28 23:30:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-28 23:30:15 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-28 23:30:15 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-28 23:30:15 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-28 23:30:15 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-28 23:30:15 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-28 23:30:15 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-28 23:30:15 -0700
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-28 23:30:18 -0700
+Processing by UsersController#new as HTML
+DEPRECATION WARNING: Currently, Active Record suppresses errors raised within `after_rollback`/`after_commit` callbacks and only print them to the logs. In the next version, these errors will no longer be suppressed. Instead, the errors will propagate normally just like in other Active Record callbacks.
+
+You can opt into the new behavior and remove this warning by setting:
+
+  config.active_record.raise_in_transactional_callbacks = true
+
+ (called from <class:User> at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/app/models/user.rb:10)
+  Rendered users/_form.html.erb (94.3ms)
+  Rendered users/new.html.erb within layouts/application (116.2ms)
+Completed 200 OK in 413ms (Views: 390.7ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-28 23:30:32 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TyydnOl9QjBS7mz1fI0HkNB50O4badUx3flR2xTPCcCq33f4n64Ad0RUlu0b7kKJ0402dLkgzURA+mILhHhb6Q==", "user"=>{"name"=>"123", "year"=>"Freshman", "email"=>"123", "password"=>"[FILTERED]", "category"=>"Tutor", "bio"=>"123", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007fffb9b32980 @tempfile=#<Tempfile:/tmp/RackMultipart20170628-8912-17ae1v4.jpg>, @original_filename="city.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"city.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create User"}
+Completed 500 Internal Server Error in 97ms (ActiveRecord: 0.0ms)
+
+Paperclip::Error (User model missing required attr_accessor for 'avatar_file_name'):
+  app/controllers/users_controller.rb:27:in `create'
+
+
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (95.6ms)
+  [1m[36m (10.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (4.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePosts (20170425212204)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170425212204_create_posts.rb:9)
+  [1m[35m (2.0ms)[0m  CREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "user_id" integer, "subject_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170425212204"]]
+  [1m[35m (3.4ms)[0m  commit transaction
+Migrating to CreateUsers (20170426004710)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426004710_create_users.rb:11)
+  [1m[35m (2.0ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password_hash" varchar, "category" varchar, "name" varchar, "year" varchar, "bio" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426004710"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Migrating to CreateSubjects (20170426032707)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426032707_create_subjects.rb:6)
+  [1m[35m (1.9ms)[0m  CREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426032707"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Migrating to CreateReviews (20170426042128)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426042128_create_reviews.rb:9)
+  [1m[35m (2.0ms)[0m  CREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "rating" integer, "body" text, "author" varchar, "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426042128"]]
+  [1m[35m (3.1ms)[0m  commit transaction
+Migrating to AddAvatarToUsers (20170629031304)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170629031304"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-28 23:32:25 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "subjects"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.1ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Arabic"], ["created_at", "2017-06-29 06:32:26.272121"], ["updated_at", "2017-06-29 06:32:26.272121"]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.1ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Astronomy"], ["created_at", "2017-06-29 06:32:26.281870"], ["updated_at", "2017-06-29 06:32:26.281870"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Biology"], ["created_at", "2017-06-29 06:32:26.290594"], ["updated_at", "2017-06-29 06:32:26.290594"]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.9ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Biochemistry"], ["created_at", "2017-06-29 06:32:26.300156"], ["updated_at", "2017-06-29 06:32:26.300156"]]
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Chemistry"], ["created_at", "2017-06-29 06:32:26.310910"], ["updated_at", "2017-06-29 06:32:26.310910"]]
+  [1m[36m (3.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Chinese"], ["created_at", "2017-06-29 06:32:26.320209"], ["updated_at", "2017-06-29 06:32:26.320209"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.7ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Cognitive Science"], ["created_at", "2017-06-29 06:32:26.327565"], ["updated_at", "2017-06-29 06:32:26.327565"]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.4ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Computer Science"], ["created_at", "2017-06-29 06:32:26.339460"], ["updated_at", "2017-06-29 06:32:26.339460"]]
+  [1m[35m (4.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.9ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Economics"], ["created_at", "2017-06-29 06:32:26.351155"], ["updated_at", "2017-06-29 06:32:26.351155"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Engineering"], ["created_at", "2017-06-29 06:32:26.361281"], ["updated_at", "2017-06-29 06:32:26.361281"]]
+  [1m[35m (4.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "French"], ["created_at", "2017-06-29 06:32:26.370747"], ["updated_at", "2017-06-29 06:32:26.370747"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.3ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "German"], ["created_at", "2017-06-29 06:32:26.379239"], ["updated_at", "2017-06-29 06:32:26.379239"]]
+  [1m[35m (3.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Greek"], ["created_at", "2017-06-29 06:32:26.389591"], ["updated_at", "2017-06-29 06:32:26.389591"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.7ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "History"], ["created_at", "2017-06-29 06:32:26.397175"], ["updated_at", "2017-06-29 06:32:26.397175"]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (8.7ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Japanese"], ["created_at", "2017-06-29 06:32:26.406717"], ["updated_at", "2017-06-29 06:32:26.406717"]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.5ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Latin"], ["created_at", "2017-06-29 06:32:26.422567"], ["updated_at", "2017-06-29 06:32:26.422567"]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Linguistics"], ["created_at", "2017-06-29 06:32:26.431813"], ["updated_at", "2017-06-29 06:32:26.431813"]]
+  [1m[36m (4.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Math"], ["created_at", "2017-06-29 06:32:26.442035"], ["updated_at", "2017-06-29 06:32:26.442035"]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.1ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Music Theory"], ["created_at", "2017-06-29 06:32:26.452524"], ["updated_at", "2017-06-29 06:32:26.452524"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (2.6ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Physics"], ["created_at", "2017-06-29 06:32:26.462043"], ["updated_at", "2017-06-29 06:32:26.462043"]]
+  [1m[35m (4.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Russian"], ["created_at", "2017-06-29 06:32:26.472290"], ["updated_at", "2017-06-29 06:32:26.472290"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Spanish"], ["created_at", "2017-06-29 06:32:26.479311"], ["updated_at", "2017-06-29 06:32:26.479311"]]
+  [1m[35m (4.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Statistics"], ["created_at", "2017-06-29 06:32:26.488700"], ["updated_at", "2017-06-29 06:32:26.488700"]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  Rendered welcome/index.html.erb within layouts/application (276.4ms)
+Completed 200 OK in 760ms (Views: 589.1ms | ActiveRecord: 147.5ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-28 23:32:26 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-28 23:32:26 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-28 23:32:27 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-28 23:32:27 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-28 23:32:27 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-28 23:32:27 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-28 23:32:27 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-28 23:32:27 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-28 23:32:27 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-28 23:32:27 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-28 23:32:27 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-28 23:32:27 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-28 23:32:27 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-28 23:32:27 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-28 23:32:27 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-28 23:32:27 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-28 23:32:27 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-28 23:32:27 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-28 23:32:27 -0700
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-28 23:32:29 -0700
+Processing by UsersController#new as HTML
+DEPRECATION WARNING: Currently, Active Record suppresses errors raised within `after_rollback`/`after_commit` callbacks and only print them to the logs. In the next version, these errors will no longer be suppressed. Instead, the errors will propagate normally just like in other Active Record callbacks.
+
+You can opt into the new behavior and remove this warning by setting:
+
+  config.active_record.raise_in_transactional_callbacks = true
+
+ (called from <class:User> at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/app/models/user.rb:11)
+  Rendered users/_form.html.erb (87.8ms)
+  Rendered users/new.html.erb within layouts/application (107.1ms)
+Completed 200 OK in 399ms (Views: 378.6ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-28 23:32:42 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TwA+c+3j9Bw91ANwyPWOIYDopO7B9pw203J9k56VDOaq89QXmzC2Wytu+Wivlss4gxxCdGO/hENOcU5DDiJezw==", "user"=>{"name"=>"asdf", "year"=>"Freshman", "email"=>"asdf", "password"=>"[FILTERED]", "category"=>"Tutor", "bio"=>"asdf", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007fffc11a58b0 @tempfile=#<Tempfile:/tmp/RackMultipart20170628-9145-d0cr57.jpg>, @original_filename="city.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"city.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create User"}
+Command :: file -b --mime '/tmp/4ed5d2eaed1a1fadcc41ad1d58ed603e20170628-9145-1352y4u.jpg'
+Completed 500 Internal Server Error in 218ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `avatar_content_type' for #<User:0x007fffc182e470>
+Did you mean?  avatar_file_name):
+  app/controllers/users_controller.rb:27:in `create'
+
+
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.0ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (109.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-28 23:39:16 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (42.1ms)
+Completed 200 OK in 532ms (Views: 507.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-28 23:39:17 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-28 23:39:17 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-28 23:39:17 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-28 23:39:17 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-28 23:39:17 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-28 23:39:17 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-28 23:39:17 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-28 23:39:17 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-28 23:39:17 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-28 23:39:17 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-28 23:39:17 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-28 23:39:17 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-28 23:39:18 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-28 23:39:18 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-28 23:39:18 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-28 23:39:18 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-28 23:39:18 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-28 23:39:18 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-28 23:39:18 -0700
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-28 23:39:20 -0700
+Processing by UsersController#new as HTML
+DEPRECATION WARNING: Currently, Active Record suppresses errors raised within `after_rollback`/`after_commit` callbacks and only print them to the logs. In the next version, these errors will no longer be suppressed. Instead, the errors will propagate normally just like in other Active Record callbacks.
+
+You can opt into the new behavior and remove this warning by setting:
+
+  config.active_record.raise_in_transactional_callbacks = true
+
+ (called from <class:User> at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/app/models/user.rb:11)
+  Rendered users/_form.html.erb (102.9ms)
+  Rendered users/new.html.erb within layouts/application (122.1ms)
+Completed 200 OK in 451ms (Views: 414.9ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-28 23:39:33 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bD0AASodbNQAvTde3RNjU52dOR+uUKA3Ure5/A4YR5qJzuplXM4ukxYHzUa6cCZKnmnfhQwZuELPtIosnq8Vsw==", "user"=>{"name"=>"123", "year"=>"Freshman", "email"=>"123", "password"=>"[FILTERED]", "category"=>"Tutor", "bio"=>"123", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007ffff7110e50 @tempfile=#<Tempfile:/tmp/RackMultipart20170628-9316-ofapc.jpg>, @original_filename="sunset.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"sunset.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create User"}
+Command :: file -b --mime '/tmp/88eb60614bb67782bd8c18afb443832920170628-9316-zhz8mc.jpg'
+Completed 500 Internal Server Error in 207ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `avatar_content_type' for #<User:0x007ffff70d59b8>
+Did you mean?  avatar_file_name):
+  app/controllers/users_controller.rb:27:in `create'
+
+
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.6ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (102.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-28 23:40:54 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (35.8ms)
+Completed 200 OK in 505ms (Views: 481.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-28 23:40:54 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-28 23:40:54 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-28 23:40:54 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-28 23:40:54 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-28 23:40:54 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-28 23:40:54 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-28 23:40:54 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-28 23:40:55 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-28 23:40:55 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-28 23:40:55 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-28 23:40:55 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-28 23:40:55 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-28 23:40:55 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-28 23:40:55 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-28 23:40:55 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-28 23:40:55 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-28 23:40:55 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-28 23:40:55 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-28 23:40:55 -0700
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-28 23:40:59 -0700
+Processing by UsersController#new as HTML
+DEPRECATION WARNING: Currently, Active Record suppresses errors raised within `after_rollback`/`after_commit` callbacks and only print them to the logs. In the next version, these errors will no longer be suppressed. Instead, the errors will propagate normally just like in other Active Record callbacks.
+
+You can opt into the new behavior and remove this warning by setting:
+
+  config.active_record.raise_in_transactional_callbacks = true
+
+ (called from <class:User> at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/app/models/user.rb:11)
+  Rendered users/_form.html.erb (93.0ms)
+  Rendered users/new.html.erb within layouts/application (112.4ms)
+Completed 200 OK in 399ms (Views: 377.7ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-28 23:41:12 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cGhheMbu2wwaz2HFhQE+Y/1UBlXaPR2gJzc/mPnqxXCVm4scsD2ZSwx1m93iYnt6/qDgz3h0BdW6NAxIaV2XWQ==", "user"=>{"name"=>"123", "year"=>"Freshman", "email"=>"123", "password"=>"[FILTERED]", "category"=>"Tutor", "bio"=>"123", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007fffd77f7220 @tempfile=#<Tempfile:/tmp/RackMultipart20170628-9413-1u2fbvs.jpg>, @original_filename="sunset.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"sunset.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create User"}
+Command :: file -b --mime '/tmp/88eb60614bb67782bd8c18afb443832920170628-9413-6d47sc.jpg'
+Completed 500 Internal Server Error in 209ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `avatar_content_type' for #<User:0x007fffd77c6b48>
+Did you mean?  avatar_file_name):
+  app/controllers/users_controller.rb:27:in `create'
+
+
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.6ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (115.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-28 23:42:21 -0700
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 300ms (Views: 297.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/posts.css?body=1" for 127.0.0.1 at 2017-06-28 23:42:21 -0700
+
+
+Started GET "/assets/reviews.css?body=1" for 127.0.0.1 at 2017-06-28 23:42:21 -0700
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-06-28 23:42:21 -0700
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-06-28 23:42:21 -0700
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2017-06-28 23:42:21 -0700
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-06-28 23:42:21 -0700
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2017-06-28 23:42:21 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-06-28 23:42:21 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-06-28 23:42:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-06-28 23:42:21 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-06-28 23:42:21 -0700
+
+
+Started GET "/assets/posts.js?body=1" for 127.0.0.1 at 2017-06-28 23:42:21 -0700
+
+
+Started GET "/assets/reviews.js?body=1" for 127.0.0.1 at 2017-06-28 23:42:21 -0700
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-06-28 23:42:21 -0700
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2017-06-28 23:42:21 -0700
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-06-28 23:42:21 -0700
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2017-06-28 23:42:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-06-28 23:42:21 -0700
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for 127.0.0.1 at 2017-06-28 23:42:22 -0700
+
+
+Started GET "/users/new" for 127.0.0.1 at 2017-06-28 23:42:24 -0700
+Processing by UsersController#new as HTML
+DEPRECATION WARNING: Currently, Active Record suppresses errors raised within `after_rollback`/`after_commit` callbacks and only print them to the logs. In the next version, these errors will no longer be suppressed. Instead, the errors will propagate normally just like in other Active Record callbacks.
+
+You can opt into the new behavior and remove this warning by setting:
+
+  config.active_record.raise_in_transactional_callbacks = true
+
+ (called from <class:User> at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/app/models/user.rb:11)
+  Rendered users/_form.html.erb (3.5ms)
+  Rendered users/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 319ms (Views: 297.9ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-06-28 23:42:35 -0700
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fMRp/F324cP/r5n0W+dK21uA/2K9fbKp89mk67wbhzWZN4OYKyWjhOkVY+w8hA/CWHQZ+B80qtxu2pc7LKzVHA==", "user"=>{"name"=>"123", "year"=>"Freshman", "email"=>"123", "password"=>"[FILTERED]", "category"=>"Tutor", "bio"=>"123", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x007fffd7798158 @tempfile=#<Tempfile:/tmp/RackMultipart20170628-9413-1t3q7rz.jpg>, @original_filename="city.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"city.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create User"}
+Command :: file -b --mime '/tmp/4ed5d2eaed1a1fadcc41ad1d58ed603e20170628-9413-1f2xg0z.jpg'
+Completed 500 Internal Server Error in 313ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `avatar_content_type' for #<User:0x007fffd777b698>
+Did you mean?  avatar_file_name):
+  app/controllers/users_controller.rb:27:in `create'
+
+
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.9ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (108.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-30 16:49:44 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.8) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.8) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (102.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-06-30 16:49:48 -0700
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.8) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.8) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.8) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.8) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.8) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.8) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.8) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.8) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.8) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.8) lib/rails/engine.rb:518:in `call'
+  railties (4.2.8) lib/rails/application.rb:165:in `call'
+  rack (1.6.8) lib/rack/lock.rb:17:in `call'
+  rack (1.6.8) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.8) lib/rack/handler/webrick.rb:88:in `service'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+  /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+
+
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.6ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /home/jeremyhan111/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.8ms)
+  [1m[36m (32.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (7.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePosts (20170425212204)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170425212204_create_posts.rb:9)
+  [1m[35m (2.0ms)[0m  CREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "user_id" integer, "subject_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170425212204"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+Migrating to CreateUsers (20170426004710)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426004710_create_users.rb:15)
+  [1m[35m (2.8ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password_hash" varchar, "category" varchar, "name" varchar, "year" varchar, "avatar_file_name" varchar, "avatar_content_type" varchar, "avatar_file_size" integer, "avatar_updated_at" datetime, "bio" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426004710"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+Migrating to CreateSubjects (20170426032707)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426032707_create_subjects.rb:6)
+  [1m[35m (2.3ms)[0m  CREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426032707"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+Migrating to CreateReviews (20170426042128)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426042128_create_reviews.rb:9)
+  [1m[35m (2.2ms)[0m  CREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "rating" integer, "body" text, "author" varchar, "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426042128"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+Migrating to AddAttachmentAvatarToUsers (20170629065709)
+  [1m[36m (15.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (4.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePosts (20170425212204)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170425212204_create_posts.rb:9)
+  [1m[35m (2.0ms)[0m  CREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "user_id" integer, "subject_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170425212204"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Migrating to CreateUsers (20170426004710)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426004710_create_users.rb:15)
+  [1m[35m (2.1ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password_hash" varchar, "category" varchar, "name" varchar, "year" varchar, "avatar_file_name" varchar, "avatar_content_type" varchar, "avatar_file_size" integer, "avatar_updated_at" datetime, "bio" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426004710"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+Migrating to CreateSubjects (20170426032707)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426032707_create_subjects.rb:6)
+  [1m[35m (2.1ms)[0m  CREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426032707"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+Migrating to CreateReviews (20170426042128)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426042128_create_reviews.rb:9)
+  [1m[35m (2.3ms)[0m  CREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "rating" integer, "body" text, "author" varchar, "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426042128"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+Migrating to AddAttachmentAvatarToUsers (20170629065709)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "avatar_file_name" varchar
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAttachmentAvatarToUsers (20170629065709)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mALTER TABLE "users" ADD "avatar_file_name" varchar[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+  [1m[36m (8.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (4.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePosts (20170425212204)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170425212204_create_posts.rb:9)
+  [1m[35m (2.0ms)[0m  CREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "user_id" integer, "subject_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170425212204"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+Migrating to CreateUsers (20170426004710)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426004710_create_users.rb:15)
+  [1m[35m (2.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password_hash" varchar, "category" varchar, "name" varchar, "year" varchar, "avatar_file_name" varchar, "avatar_content_type" varchar, "avatar_file_size" integer, "avatar_updated_at" datetime, "bio" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426004710"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+Migrating to CreateSubjects (20170426032707)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426032707_create_subjects.rb:6)
+  [1m[35m (2.3ms)[0m  CREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426032707"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+Migrating to CreateReviews (20170426042128)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426042128_create_reviews.rb:9)
+  [1m[35m (1.9ms)[0m  CREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "rating" integer, "body" text, "author" varchar, "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426042128"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (6.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (3.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePosts (20170425212204)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170425212204_create_posts.rb:9)
+  [1m[35m (2.0ms)[0m  CREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "user_id" integer, "subject_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170425212204"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+Migrating to CreateUsers (20170426004710)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426004710_create_users.rb:15)
+  [1m[35m (2.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password_hash" varchar, "category" varchar, "name" varchar, "year" varchar, "avatar_file_name" varchar, "avatar_content_type" varchar, "avatar_file_size" integer, "avatar_updated_at" datetime, "bio" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426004710"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+Migrating to CreateSubjects (20170426032707)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426032707_create_subjects.rb:6)
+  [1m[35m (2.2ms)[0m  CREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426032707"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+Migrating to CreateReviews (20170426042128)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426042128_create_reviews.rb:9)
+  [1m[35m (2.3ms)[0m  CREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "rating" integer, "body" text, "author" varchar, "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426042128"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+Migrating to AddAttachmentAvatarToUsers (20170630235608)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "avatar_file_name" varchar
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (9.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (4.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePosts (20170425212204)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170425212204_create_posts.rb:9)
+  [1m[35m (2.0ms)[0m  CREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "user_id" integer, "subject_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170425212204"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+Migrating to CreateUsers (20170426004710)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426004710_create_users.rb:15)
+  [1m[35m (2.1ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password_hash" varchar, "category" varchar, "name" varchar, "year" varchar, "avatar_file_name" varchar, "avatar_content_type" varchar, "avatar_file_size" integer, "avatar_updated_at" datetime, "bio" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426004710"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+Migrating to CreateSubjects (20170426032707)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426032707_create_subjects.rb:6)
+  [1m[35m (2.3ms)[0m  CREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426032707"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+Migrating to CreateReviews (20170426042128)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426042128_create_reviews.rb:9)
+  [1m[35m (2.2ms)[0m  CREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "rating" integer, "body" text, "author" varchar, "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426042128"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+Migrating to AddAttachmentAvatarToUsers (20170630235608)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD "avatar_file_name" varchar
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (8.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (4.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePosts (20170425212204)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170425212204_create_posts.rb:9)
+  [1m[35m (1.7ms)[0m  CREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "user_id" integer, "subject_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170425212204"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+Migrating to CreateUsers (20170426004710)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426004710_create_users.rb:15)
+  [1m[35m (1.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password_hash" varchar, "category" varchar, "name" varchar, "year" varchar, "avatar_file_name" varchar, "avatar_content_type" varchar, "avatar_file_size" integer, "avatar_updated_at" datetime, "bio" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426004710"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+Migrating to CreateSubjects (20170426032707)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426032707_create_subjects.rb:6)
+  [1m[35m (2.8ms)[0m  CREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426032707"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+Migrating to CreateReviews (20170426042128)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426042128_create_reviews.rb:9)
+  [1m[35m (1.7ms)[0m  CREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "rating" integer, "body" text, "author" varchar, "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426042128"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+Migrating to AddAttachmentAvatarToUsers (20170630235608)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "avatar_file_name" varchar
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36m (9.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (4.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreatePosts (20170425212204)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170425212204_create_posts.rb:9)
+  [1m[35m (2.0ms)[0m  CREATE TABLE "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "user_id" integer, "subject_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170425212204"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+Migrating to CreateUsers (20170426004710)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426004710_create_users.rb:15)
+  [1m[35m (2.0ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password_hash" varchar, "category" varchar, "name" varchar, "year" varchar, "avatar_file_name" varchar, "avatar_content_type" varchar, "avatar_file_size" integer, "avatar_updated_at" datetime, "bio" text, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426004710"]]
+  [1m[35m (3.1ms)[0m  commit transaction
+Migrating to CreateSubjects (20170426032707)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426032707_create_subjects.rb:6)
+  [1m[35m (1.8ms)[0m  CREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426032707"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+Migrating to CreateReviews (20170426042128)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /mnt/c/Users/Jeremy Han/Desktop/SwatTutorr/swattutor/db/migrate/20170426042128_create_reviews.rb:9)
+  [1m[35m (2.0ms)[0m  CREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "rating" integer, "body" text, "author" varchar, "user_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170426042128"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+Migrating to AddAttachmentAvatarToUsers (20170630235608)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  ALTER TABLE "users" ADD "avatar_file_name" varchar
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m

@@ -38,7 +38,7 @@ group :development, :test do
 end
 
 gem 'friendly_id'
-gem 'paperclip'
+gem "paperclip", "~> 5.0.0"
 gem 'aws-sdk', '~> 2.3'
 # Use unicorn as the app server
 # gem 'unicorn'
