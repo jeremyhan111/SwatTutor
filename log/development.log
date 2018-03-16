@@ -74939,3 +74939,386 @@ You can opt into the new behavior and remove this warning by setting:
   Rendered users/_form.html.erb (69.5ms)
   Rendered users/new.html.erb within layouts/application (78.4ms)
 Completed 200 OK in 393ms (Views: 347.9ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for ::1 at 2018-03-16 19:22:42 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 180ms (Views: 170.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/posts.css?body=1" for ::1 at 2018-03-16 19:22:42 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2018-03-16 19:22:42 +0800
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2018-03-16 19:22:42 +0800
+
+
+Started GET "/assets/subjects.css?body=1" for ::1 at 2018-03-16 19:22:42 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for ::1 at 2018-03-16 19:22:42 +0800
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2018-03-16 19:22:42 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for ::1 at 2018-03-16 19:22:42 +0800
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2018-03-16 19:22:42 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2018-03-16 19:22:42 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2018-03-16 19:22:42 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2018-03-16 19:22:42 +0800
+
+
+Started GET "/assets/posts.js?body=1" for ::1 at 2018-03-16 19:22:42 +0800
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2018-03-16 19:22:42 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2018-03-16 19:22:42 +0800
+
+
+Started GET "/assets/subjects.js?body=1" for ::1 at 2018-03-16 19:22:42 +0800
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2018-03-16 19:22:42 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for ::1 at 2018-03-16 19:22:42 +0800
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2018-03-16 19:22:42 +0800
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for ::1 at 2018-03-16 19:22:42 +0800
+
+
+Started GET "/users/new" for ::1 at 2018-03-16 19:22:48 +0800
+Processing by UsersController#new as HTML
+DEPRECATION WARNING: Currently, Active Record suppresses errors raised within `after_rollback`/`after_commit` callbacks and only print them to the logs. In the next version, these errors will no longer be suppressed. Instead, the errors will propagate normally just like in other Active Record callbacks.
+
+You can opt into the new behavior and remove this warning by setting:
+
+  config.active_record.raise_in_transactional_callbacks = true
+
+ (called from <class:User> at /Users/jeremyhan/Desktop/Projects/SwatTutor/app/models/user.rb:10)
+  Rendered users/_form.html.erb (40.7ms)
+  Rendered users/new.html.erb within layouts/application (46.5ms)
+Completed 200 OK in 125ms (Views: 114.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for ::1 at 2018-03-16 19:22:55 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eYJrJBcQ21V6+yOiwtg4irO4phNTpxfLlQKT0zwUxKNNLCIMaPAvNk0gRLsQg9tGJzRPI0QOgH4YzUyhpgrARw==", "user"=>{"name"=>"asdf", "year"=>"Freshman", "email"=>"asdf", "password"=>"[FILTERED]", "bio"=>"adf"}, "commit"=>"Create User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered users/_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 153ms (Views: 91.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/posts.css?body=1" for ::1 at 2018-03-16 19:22:55 +0800
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2018-03-16 19:22:55 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for ::1 at 2018-03-16 19:22:55 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2018-03-16 19:22:55 +0800
+
+
+Started GET "/assets/subjects.css?body=1" for ::1 at 2018-03-16 19:22:56 +0800
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2018-03-16 19:22:56 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for ::1 at 2018-03-16 19:22:56 +0800
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2018-03-16 19:22:56 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2018-03-16 19:22:56 +0800
+
+
+Started POST "/users" for ::1 at 2018-03-16 19:23:03 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hN5bL1vjR32a0PMohcMQttQlLTqrUx81ZI4z5EGLDoqwcBIHJAOzHq0LlDFXmPN6QKnECrz6iIDpQeyW25UKbg==", "user"=>{"name"=>"asdf", "year"=>"Freshman", "email"=>"asdf", "password"=>"[FILTERED]", "category"=>"Tutor", "bio"=>"adf"}, "commit"=>"Create User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "users" ("email", "password_hash", "category", "name", "year", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["email", "asdf"], ["password_hash", "$2a$10$aTJW3/xpZpazqt4Tm2zEb.tR6KIBTCCQfX05jRR0lbHhmtym.2v7m"], ["category", "Tutor"], ["name", "asdf"], ["year", "Freshman"], ["bio", "adf"], ["created_at", "2018-03-16 11:23:04.008299"], ["updated_at", "2018-03-16 11:23:04.008299"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Redirected to http://localhost:3000/subjects
+Completed 302 Found in 67ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/subjects" for ::1 at 2018-03-16 19:23:04 +0800
+Processing by SubjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mSubject Load (0.1ms)[0m  SELECT "subjects".* FROM "subjects"
+  Rendered subjects/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 77ms (Views: 75.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/posts.css?body=1" for ::1 at 2018-03-16 19:23:04 +0800
+
+
+Started GET "/assets/subjects.css?body=1" for ::1 at 2018-03-16 19:23:04 +0800
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2018-03-16 19:23:04 +0800
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2018-03-16 19:23:04 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2018-03-16 19:23:04 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for ::1 at 2018-03-16 19:23:04 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for ::1 at 2018-03-16 19:23:04 +0800
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2018-03-16 19:23:04 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2018-03-16 19:23:04 +0800
+
+
+Started DELETE "/logout" for ::1 at 2018-03-16 19:23:08 +0800
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LdhoyESZSdPy27PU/bXT6NaykQjtLANso7EoSQlPl/wZdiHgO3m9sMUA1M0v7jAkQj54OPqFlNkufvc7k1GTGA=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-03-16 19:23:08 +0800
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 64ms (Views: 64.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/posts.css?body=1" for ::1 at 2018-03-16 19:23:08 +0800
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2018-03-16 19:23:08 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for ::1 at 2018-03-16 19:23:08 +0800
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2018-03-16 19:23:08 +0800
+
+
+Started GET "/assets/subjects.css?body=1" for ::1 at 2018-03-16 19:23:08 +0800
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2018-03-16 19:23:08 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2018-03-16 19:23:08 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2018-03-16 19:23:08 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for ::1 at 2018-03-16 19:23:08 +0800
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for ::1 at 2018-03-16 19:23:08 +0800
+
+
+Started GET "/users/new" for ::1 at 2018-03-16 19:25:43 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+DEPRECATION WARNING: Currently, Active Record suppresses errors raised within `after_rollback`/`after_commit` callbacks and only print them to the logs. In the next version, these errors will no longer be suppressed. Instead, the errors will propagate normally just like in other Active Record callbacks.
+
+You can opt into the new behavior and remove this warning by setting:
+
+  config.active_record.raise_in_transactional_callbacks = true
+
+ (called from <class:User> at /Users/jeremyhan/Desktop/Projects/SwatTutor/app/models/user.rb:10)
+  Rendered users/_form.html.erb (34.3ms)
+  Rendered users/new.html.erb within layouts/application (41.3ms)
+Completed 200 OK in 221ms (Views: 195.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2018-03-16 19:25:43 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for ::1 at 2018-03-16 19:25:43 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2018-03-16 19:25:43 +0800
+
+
+Started GET "/assets/subjects.css?body=1" for ::1 at 2018-03-16 19:25:43 +0800
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2018-03-16 19:25:43 +0800
+
+
+Started GET "/assets/posts.css?body=1" for ::1 at 2018-03-16 19:25:43 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for ::1 at 2018-03-16 19:25:43 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2018-03-16 19:25:43 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2018-03-16 19:25:43 +0800
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2018-03-16 19:25:43 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2018-03-16 19:25:43 +0800
+
+
+Started POST "/users" for ::1 at 2018-03-16 19:25:56 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9U5upPjh5sQVAs0i7pNLk/edH0II8VxEVX3HFBwC2XXvVxIzO2VM/apcq03Iw3NdGe776weCRTHlJyo3VlQTDg==", "user"=>{"name"=>"asdf", "year"=>"Freshman", "email"=>"asdf", "password"=>"[FILTERED]", "category"=>"Tutor", "bio"=>"asdf", "avatar"=>#<ActionDispatch::Http::UploadedFile:0x00007fc338a27cb0 @tempfile=#<Tempfile:/var/folders/pd/cf9mdvgn7m173w4dy_6vdjjr0000gn/T/RackMultipart20180316-53458-17g20h0.png>, @original_filename="all_friends-32.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"user[avatar]\"; filename=\"all_friends-32.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create User"}
+Command :: PATH=/usr/bin/:$PATH; file -b --mime '/var/folders/pd/cf9mdvgn7m173w4dy_6vdjjr0000gn/T/b3ed25d2da2eaf3419de0704d1734b6f20180316-53458-21rfv8.png'
+Command :: PATH=/usr/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/var/folders/pd/cf9mdvgn7m173w4dy_6vdjjr0000gn/T/b3ed25d2da2eaf3419de0704d1734b6f20180316-53458-5ll8gz.png[0]' 2>/dev/null
+Completed 500 Internal Server Error in 88ms (ActiveRecord: 0.0ms)
+
+Paperclip::Errors::CommandNotFoundError (Could not run the `identify` command. Please install ImageMagick.):
+  app/controllers/users_controller.rb:27:in `create'
+
+
+  Rendered /Users/jeremyhan/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/jeremyhan/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/jeremyhan/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/jeremyhan/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionpack-4.2.8/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (101.4ms)
+
+
+Started POST "/users" for ::1 at 2018-03-16 19:26:11 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9U5upPjh5sQVAs0i7pNLk/edH0II8VxEVX3HFBwC2XXvVxIzO2VM/apcq03Iw3NdGe776weCRTHlJyo3VlQTDg==", "user"=>{"name"=>"asdf", "year"=>"Freshman", "email"=>"asdf", "password"=>"[FILTERED]", "category"=>"Tutor", "bio"=>"asdf"}, "commit"=>"Create User"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("email", "password_hash", "category", "name", "year", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "asdf"], ["password_hash", "$2a$10$XrQAgPUA/Hfyhdi3M7hljOwwVeoaZGUZl7q27pFT8qazmwNly4qf."], ["category", "Tutor"], ["name", "asdf"], ["year", "Freshman"], ["bio", "asdf"], ["created_at", "2018-03-16 11:26:11.093678"], ["updated_at", "2018-03-16 11:26:11.093678"]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Redirected to http://localhost:3000/subjects
+Completed 302 Found in 74ms (ActiveRecord: 3.9ms)
+
+
+Started GET "/subjects" for ::1 at 2018-03-16 19:26:11 +0800
+Processing by SubjectsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mSubject Load (0.4ms)[0m  [1mSELECT "subjects".* FROM "subjects"[0m
+  Rendered subjects/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 80ms (Views: 75.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/posts.css?body=1" for ::1 at 2018-03-16 19:26:11 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2018-03-16 19:26:11 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for ::1 at 2018-03-16 19:26:11 +0800
+
+
+Started GET "/assets/subjects.css?body=1" for ::1 at 2018-03-16 19:26:11 +0800
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2018-03-16 19:26:11 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2018-03-16 19:26:11 +0800
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2018-03-16 19:26:11 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for ::1 at 2018-03-16 19:26:11 +0800
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2018-03-16 19:26:11 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2018-03-16 19:26:11 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2018-03-16 19:26:11 +0800
+
+
+Started GET "/subjects/8" for ::1 at 2018-03-16 19:26:15 +0800
+Processing by SubjectsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mSubject Load (0.1ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."subject_id" = ?  [["subject_id", 8]]
+  Rendered subjects/show.html.erb within layouts/application (32.9ms)
+Completed 200 OK in 126ms (Views: 124.0ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/logout" for ::1 at 2018-03-16 19:26:17 +0800
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pb65miNhl5RrQ7YqSwzigO1SM9mD0hl94YXGcyat2BG/p8UN4OU9rdQd0EVtXNpOAyHXcIyhAAhR3ytQbPsSag=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-03-16 19:26:17 +0800
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 64ms (Views: 63.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2018-03-16 19:26:17 +0800
+
+
+Started GET "/assets/subjects.css?body=1" for ::1 at 2018-03-16 19:26:17 +0800
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2018-03-16 19:26:17 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for ::1 at 2018-03-16 19:26:17 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2018-03-16 19:26:17 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2018-03-16 19:26:17 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2018-03-16 19:26:17 +0800
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2018-03-16 19:26:17 +0800
+
+
+Started GET "/assets/posts.css?body=1" for ::1 at 2018-03-16 19:26:17 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2018-03-16 19:26:17 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for ::1 at 2018-03-16 19:26:17 +0800
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for ::1 at 2018-03-16 19:26:17 +0800
