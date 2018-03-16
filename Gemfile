@@ -38,8 +38,6 @@ group :development, :test do
 end
 
 gem 'friendly_id'
-gem "paperclip", "~> 5.0.0"
-gem 'aws-sdk', '~> 2.3'
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'mailboxer'

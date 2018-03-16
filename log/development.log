@@ -75322,3 +75322,283 @@ Started GET "/assets/welcome.css?body=1" for ::1 at 2018-03-16 19:26:17 +0800
 
 
 Started GET "/assets/color-coded-bookshelves.jpg" for ::1 at 2018-03-16 19:26:17 +0800
+
+
+Started GET "/" for ::1 at 2018-03-16 19:39:51 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "subjects"
+  Rendered welcome/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 165ms (Views: 156.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/posts.css?body=1" for ::1 at 2018-03-16 19:39:51 +0800
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2018-03-16 19:39:51 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for ::1 at 2018-03-16 19:39:51 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for ::1 at 2018-03-16 19:39:51 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2018-03-16 19:39:51 +0800
+
+
+Started GET "/assets/subjects.css?body=1" for ::1 at 2018-03-16 19:39:51 +0800
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2018-03-16 19:39:51 +0800
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2018-03-16 19:39:51 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2018-03-16 19:39:51 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2018-03-16 19:39:51 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2018-03-16 19:39:51 +0800
+
+
+Started GET "/assets/posts.js?body=1" for ::1 at 2018-03-16 19:39:51 +0800
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2018-03-16 19:39:51 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2018-03-16 19:39:51 +0800
+
+
+Started GET "/assets/subjects.js?body=1" for ::1 at 2018-03-16 19:39:51 +0800
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2018-03-16 19:39:51 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for ::1 at 2018-03-16 19:39:51 +0800
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2018-03-16 19:39:51 +0800
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for ::1 at 2018-03-16 19:39:51 +0800
+
+
+Started GET "/users/new" for ::1 at 2018-03-16 19:40:46 +0800
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (35.3ms)
+  Rendered users/new.html.erb within layouts/application (40.7ms)
+Completed 200 OK in 144ms (Views: 115.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for ::1 at 2018-03-16 19:40:58 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cTQ07RNnGYA29OuPcPn3d227LbU4qt2bUmE+8oGBdMlimz+qcDmxMlr6w/XE3IWMOM3YWW4g33wpeJOKXMhDgA==", "user"=>{"name"=>"asdf", "year"=>"Freshman", "email"=>"asdf", "password"=>"[FILTERED]", "bio"=>"sdf"}, "commit"=>"Create User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered users/_form.html.erb (2.0ms)
+  Rendered users/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 121ms (Views: 62.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/posts.css?body=1" for ::1 at 2018-03-16 19:40:58 +0800
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2018-03-16 19:40:58 +0800
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2018-03-16 19:40:58 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2018-03-16 19:40:58 +0800
+
+
+Started GET "/assets/subjects.css?body=1" for ::1 at 2018-03-16 19:40:58 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for ::1 at 2018-03-16 19:40:58 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for ::1 at 2018-03-16 19:40:58 +0800
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2018-03-16 19:40:58 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2018-03-16 19:40:58 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2018-03-16 19:40:58 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2018-03-16 19:40:58 +0800
+
+
+Started GET "/assets/posts.js?body=1" for ::1 at 2018-03-16 19:40:58 +0800
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2018-03-16 19:40:58 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2018-03-16 19:40:58 +0800
+
+
+Started GET "/assets/subjects.js?body=1" for ::1 at 2018-03-16 19:40:58 +0800
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2018-03-16 19:40:58 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for ::1 at 2018-03-16 19:40:58 +0800
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2018-03-16 19:40:58 +0800
+
+
+Started POST "/users" for ::1 at 2018-03-16 19:41:07 +0800
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yy0EySPihTGxhArkADhZoV7AEpM8Jp/f44WapWEzB33Ygg+OQLwtg92KIp60HStaC7bnf2qsnTiYnDfdvHowNA==", "user"=>{"name"=>"asdf", "year"=>"Freshman", "email"=>"asdf", "password"=>"[FILTERED]", "category"=>"Tutor", "bio"=>"sdf"}, "commit"=>"Create User"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("email", "password_hash", "category", "name", "year", "bio", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["email", "asdf"], ["password_hash", "$2a$10$c5GQbtpxFeaPAdiUKsKAHeGRZDxIsDtvqH1J2lyfsLq0hVbMimoAa"], ["category", "Tutor"], ["name", "asdf"], ["year", "Freshman"], ["bio", "sdf"], ["created_at", "2018-03-16 11:41:07.630127"], ["updated_at", "2018-03-16 11:41:07.630127"]]
+  [1m[36m (6.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Redirected to http://localhost:3000/subjects
+Completed 302 Found in 75ms (ActiveRecord: 7.2ms)
+
+
+Started GET "/subjects" for ::1 at 2018-03-16 19:41:07 +0800
+Processing by SubjectsController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mSubject Load (0.1ms)[0m  SELECT "subjects".* FROM "subjects"
+  Rendered subjects/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 68ms (Views: 67.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/posts.css?body=1" for ::1 at 2018-03-16 19:41:07 +0800
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2018-03-16 19:41:07 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for ::1 at 2018-03-16 19:41:07 +0800
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2018-03-16 19:41:07 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2018-03-16 19:41:07 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for ::1 at 2018-03-16 19:41:07 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2018-03-16 19:41:07 +0800
+
+
+Started GET "/assets/subjects.css?body=1" for ::1 at 2018-03-16 19:41:07 +0800
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2018-03-16 19:41:07 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2018-03-16 19:41:07 +0800
+
+
+Started GET "/assets/posts.js?body=1" for ::1 at 2018-03-16 19:41:07 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2018-03-16 19:41:07 +0800
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2018-03-16 19:41:07 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2018-03-16 19:41:07 +0800
+
+
+Started GET "/assets/subjects.js?body=1" for ::1 at 2018-03-16 19:41:07 +0800
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2018-03-16 19:41:07 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for ::1 at 2018-03-16 19:41:07 +0800
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2018-03-16 19:41:07 +0800
+
+
+Started DELETE "/logout" for ::1 at 2018-03-16 19:41:09 +0800
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"O/qtQoPtGKPqiiJGNqQtHsNiXj9fjR+R2jbCK/JbYrYoVaYF4LOwEYaECjyCgV/llhSr0wkHHXahL29TLxJV/w=="}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-03-16 19:41:09 +0800
+Processing by WelcomeController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "subjects"[0m
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 64ms (Views: 63.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/reviews.css?body=1" for ::1 at 2018-03-16 19:41:09 +0800
+
+
+Started GET "/assets/posts.css?body=1" for ::1 at 2018-03-16 19:41:09 +0800
+
+
+Started GET "/assets/scaffolds.css?body=1" for ::1 at 2018-03-16 19:41:09 +0800
+
+
+Started GET "/assets/subjects.css?body=1" for ::1 at 2018-03-16 19:41:09 +0800
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2018-03-16 19:41:09 +0800
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2018-03-16 19:41:09 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for ::1 at 2018-03-16 19:41:09 +0800
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2018-03-16 19:41:09 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2018-03-16 19:41:09 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2018-03-16 19:41:09 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2018-03-16 19:41:09 +0800
+
+
+Started GET "/assets/posts.js?body=1" for ::1 at 2018-03-16 19:41:09 +0800
+
+
+Started GET "/assets/reviews.js?body=1" for ::1 at 2018-03-16 19:41:09 +0800
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2018-03-16 19:41:09 +0800
+
+
+Started GET "/assets/subjects.js?body=1" for ::1 at 2018-03-16 19:41:09 +0800
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2018-03-16 19:41:09 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for ::1 at 2018-03-16 19:41:09 +0800
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2018-03-16 19:41:09 +0800
+
+
+Started GET "/assets/color-coded-bookshelves.jpg" for ::1 at 2018-03-16 19:41:09 +0800
